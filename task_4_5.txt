@@ -1,0 +1,2 @@
+task 4:Git commands used: -git init -initialised empty git repository ,git checkout -t -b temp,git add .,git status,git commit-m,git remote add origin ,git pull --rebase origin temp,git push -u origin temp
+task 5:Changed directory to folder with GitHub_task, Git commands :git pull,git merge orgigin/temp,git push -u origin master
