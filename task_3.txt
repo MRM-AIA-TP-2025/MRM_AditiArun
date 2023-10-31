@@ -1,1 +1,1 @@
-Git commands used: -git init -initialised empty git repository -git config -git add . -git status -git commit -git remote add origin -'url' -git push -u origin master
+Git commands used: -git init -initialised empty git repository ,git checkout -t -b temp,git add .,git status,git commit-m,git remote add origin ,git pull --rebase origin temp,git push -u origin temp
