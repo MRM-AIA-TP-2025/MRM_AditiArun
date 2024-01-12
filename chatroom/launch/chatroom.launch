@@ -1,0 +1,11 @@
+<!-- chatroom/launch/chatroom.launch -->
+<launch>
+  <!-- Launch chat publisher nodes -->
+  <node name="user1_node" pkg="chatroom" type="user1_node" output="screen"/>
+  <node name="user2_node" pkg="chatroom" type="user2_node" output="screen"/>
+  <node name="user3_node" pkg="chatroom" type="user3_node" output="screen"/>
+
+  <!-- Launch chat subscriber node -->
+  <node name="chat_subscriber" pkg="chatroom" type="chat_subscriber" output="screen"/>
+</launch>
+
