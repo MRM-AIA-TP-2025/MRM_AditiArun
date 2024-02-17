@@ -62,12 +62,18 @@ public:
         return degrees * M_PI / 180.0;}
 
     bool detectObstacle(const sensor_msgs::LaserScan::ConstPtr& laserScan) {
-        double thresholdDistance = 1.8; // Define a threshold distance for obstacle detection
+        double thresholdDistance = 3.5; // Define a threshold distance for obstacle detection
+        double thresholdDistance2=0.5;
         for (size_t i = 0; i < laserScan->ranges.size(); ++i) {
+            if (laserScan->ranges[i] < thresholdDistance2)
+            {
+
+            }
             if (laserScan->ranges[i] < thresholdDistance) {
                 ROS_WARN("Obstacle detected at angle %f with distance %f", laserScan->angle_min + i * laserScan->angle_increment, laserScan->ranges[i]);
                 return true; // Obstacle detected
             }
+
         }
         
         return false; // No obstacle detected
@@ -122,9 +128,9 @@ void targetGpsCallback(const sensor_msgs::NavSatFix::ConstPtr& targetGpsMsg, Rov
     }
 }
 void take_action(const std::map<std::string, double>& regions, geometry_msgs::Twist& cmd_vel) {
-    double threshold_dist = 1.5;
-    double linear_speed = 0.7;
-    double angular_speed = 1.2;
+    double threshold_dist = 1.35;
+    double linear_speed = 0.8;
+    double angular_speed = 1.5;
 
     std::string state_description = "";
 
@@ -138,16 +144,16 @@ void take_action(const std::map<std::string, double>& regions, geometry_msgs::Tw
         cmd_vel.angular.z = angular_speed;
     } else if (regions.at("front") > threshold_dist && regions.at("left") > threshold_dist && regions.at("right") < threshold_dist) {
         state_description = "case 3 - right";
-        cmd_vel.linear.x = 0;
-        cmd_vel.angular.z = -angular_speed;
+        cmd_vel.linear.x = 0.6;
+        cmd_vel.angular.z = 0;
     } else if (regions.at("front") > threshold_dist && regions.at("left") < threshold_dist && regions.at("right") > threshold_dist) {
         state_description = "case 4 - left";
-        cmd_vel.linear.x = 0;
-        cmd_vel.angular.z = angular_speed;
+        cmd_vel.linear.x = 0.6;
+        cmd_vel.angular.z = 0;
     } else if (regions.at("front") < threshold_dist && regions.at("left") > threshold_dist && regions.at("right") < threshold_dist) {
         state_description = "case 5 - front and right";
         cmd_vel.linear.x = 0;
-        cmd_vel.angular.z = -angular_speed;
+        cmd_vel.angular.z =-angular_speed;
     } else if (regions.at("front") < threshold_dist && regions.at("left") < threshold_dist && regions.at("right") > threshold_dist) {
         state_description = "case 6 - front and left";
         cmd_vel.linear.x = 0;
@@ -158,7 +164,7 @@ void take_action(const std::map<std::string, double>& regions, geometry_msgs::Tw
         cmd_vel.angular.z = angular_speed;
     } else {
         state_description = "unknown case";
-        cmd_vel.linear.x = 0;
+        cmd_vel.linear.x = 0.6;
         cmd_vel.angular.z = -angular_speed;
     }
 
@@ -167,143 +173,23 @@ void take_action(const std::map<std::string, double>& regions, geometry_msgs::Tw
 
 
 
-/*void take_action(const std::map<std::string, double>& regions, geometry_msgs::Twist& cmd_vel) {
-    double threshold_dist = 1.0;
-    double linear_speed = 0.6;
-    double angular_speed = 1;
-
-    std::string state_description = "";
-
-    
-    if (regions.at("front") < threshold_dist && regions.at("left") < threshold_dist && regions.at("right") < threshold_dist) {
-        state_description = "case 7 - front and left and right";
-        cmd_vel.linear.x = -linear_speed;
-        cmd_vel.angular.z = angular_speed;
-    } else if (regions.at("front") < threshold_dist && regions.at("left") > threshold_dist && regions.at("right") > threshold_dist) {
-        state_description = "case 2 - front";
-        cmd_vel.linear.x = 0;
-        cmd_vel.angular.z = angular_speed;
-    } else if (regions.at("front") > threshold_dist && regions.at("left") > threshold_dist && regions.at("right") < threshold_dist) {
-        state_description = "case 3 - right";
-        cmd_vel.linear.x = 0;
-        cmd_vel.angular.z = -angular_speed;
-    } else if (regions.at("front") > threshold_dist && regions.at("left") < threshold_dist && regions.at("right") > threshold_dist) {
-        state_description = "case 4 - left";
-        cmd_vel.linear.x = 0;
-        cmd_vel.angular.z = angular_speed;
-    } else if (regions.at("front") < threshold_dist && regions.at("left") > threshold_dist && regions.at("right") < threshold_dist) {
-        state_description = "case 5 - front and right";
-        cmd_vel.linear.x = 0;
-        cmd_vel.angular.z = -angular_speed;
-    } else if (regions.at("front") < threshold_dist && regions.at("left") < threshold_dist && regions.at("right") > threshold_dist) {
-        state_description = "case 6 - front and left";
-        cmd_vel.linear.x = 0;
-        cmd_vel.angular.z = angular_speed;
-    } else if (regions.at("front") > threshold_dist && regions.at("left") < threshold_dist && regions.at("right") < threshold_dist) {
-        state_description = "case 8 - obstacle on the left and right";
-        cmd_vel.linear.x = -linear_speed;
-        cmd_vel.angular.z = angular_speed;
-    } else {
-        state_description = "unknown case";
-    }
-
-    ROS_INFO("%s AAAAA", state_description.c_str());
-}*/
-
-/*oid take_action(const std::map<std::string, double>& regions, ros::Publisher& pub) {
-    double threshold_dist = 1.0;
-    double linear_speed = 0.6;
-    double angular_speed = 1;
-
-    geometry_msgs::Twist msg;
-    double linear_x = 0;
-    double angular_z = 0;
-    std::string state_description = "";
-
-    if (regions.at("front") > threshold_dist && regions.at("left") > threshold_dist && regions.at("right") > threshold_dist) {
-        state_description = "case 1 - no obstacle";
-        linear_x = linear_speed;
-        angular_z = 0;
-    } else if (regions.at("front") < threshold_dist && regions.at("left") < threshold_dist && regions.at("right") < threshold_dist) {
-        state_description = "case 7 - front and left and right";
-        linear_x = -linear_speed;
-        angular_z = angular_speed;
-    } else if (regions.at("front") < threshold_dist && regions.at("left") > threshold_dist && regions.at("right") > threshold_dist) {
-        state_description = "case 2 - front";
-        linear_x = 0;
-        angular_z = angular_speed;
-    } else if (regions.at("front") > threshold_dist && regions.at("left") > threshold_dist && regions.at("right") < threshold_dist) {
-        state_description = "case 3 - right";
-        linear_x = 0;
-        angular_z = -angular_speed;
-    } else if (regions.at("front") > threshold_dist && regions.at("left") < threshold_dist && regions.at("right") > threshold_dist) {
-        state_description = "case 4 - left";
-        linear_x = 0;
-        angular_z = angular_speed;
-    } else if (regions.at("front") < threshold_dist && regions.at("left") > threshold_dist && regions.at("right") < threshold_dist) {
-        state_description = "case 5 - front and right";
-        linear_x = 0;
-        angular_z = -angular_speed;
-    } else if (regions.at("front") < threshold_dist && regions.at("left") < threshold_dist && regions.at("right") > threshold_dist) {
-        state_description = "case 6 - front and left";
-        linear_x = 0;
-        angular_z = angular_speed;
-    } else if (regions.at("front") > threshold_dist && regions.at("left") < threshold_dist && regions.at("right") < threshold_dist) {
-        state_description = "case 8 - obstacle on the left and right";
-        linear_x = -linear_speed;
-        angular_z = angular_speed;
-    } else {
-        state_description = "unknown case";
-    }
-
-    ROS_INFO("%s AAAAA", state_description.c_str());
-
-    msg.linear.x = linear_x;
-    msg.angular.z = angular_z;
-
-    // Publish the twist message
-    pub.publish(msg);
-}*/
-/*void lidarCallback(const sensor_msgs::LaserScan::ConstPtr& laserScan, Rover& myRover, geometry_msgs::Twist& cmd_vel, ros::Publisher& pub) {
-    if (!reachedGoal) {
-        std::map<std::string, double> regions;
-        
-        regions["right"] = std::min(std::min(static_cast<double>(laserScan->ranges[0]), static_cast<double>(laserScan->ranges[1])), 10.0);
-        regions["front"] = std::min(std::min(static_cast<double>(laserScan->ranges[89]), static_cast<double>(laserScan->ranges[90])), 10.0);
-        regions["left"] = std::min(std::min(static_cast<double>(laserScan->ranges[178]), static_cast<double>(laserScan->ranges[179])), 10.0);
-
-    
-        if (myRover.detectObstacle(laserScan)) {
-            take_action(regions, pub);
-        }
-    }
-}*/
-/*void lidarCallback(const sensor_msgs::LaserScan::ConstPtr& laserScan, Rover& myRover, geometry_msgs::Twist& cmd_vel, ros::Publisher& pub) {
-    if (!reachedGoal) {
-        std::map<std::string, double> regions;
-        regions["right"] = std::min(std::min(static_cast<double>(laserScan->ranges[0]), static_cast<double>(laserScan->ranges[1])), 10.0);
-        regions["front"] = std::min(std::min(static_cast<double>(laserScan->ranges[2]), static_cast<double>(laserScan->ranges[3])), 10.0);
-        regions["left"] = std::min(std::min(static_cast<double>(laserScan->ranges[4]), static_cast<double>(laserScan->ranges[5])), 10.0);
-    
-        if (myRover.detectObstacle(laserScan)) {
-            take_action(regions, cmd_vel); // Pass cmd_vel instead of pub
-        }
-    }
-}*/
-
 void lidarCallback(const sensor_msgs::LaserScan::ConstPtr& laserScan, Rover& myRover, geometry_msgs::Twist& cmd_vel, ros::Publisher& pub) {
     if (!reachedGoal) {
         std::map<std::string, double> regions;
-        regions["right"] = std::min(std::min(static_cast<double>(laserScan->ranges[0]), static_cast<double>(laserScan->ranges[1])), 10.0);
-        regions["front"] = std::min(std::min(static_cast<double>(laserScan->ranges[2]), static_cast<double>(laserScan->ranges[3])), 10.0);
-        regions["left"] = std::min(std::min(static_cast<double>(laserScan->ranges[4]), static_cast<double>(laserScan->ranges[5])), 10.0);
-    
+        // Divide the laser scan into three regions: right, front, and left
+        // Right region: angles from 0 to 59 (inclusive)
+        regions["right"] = *std::min_element(laserScan->ranges.begin(), laserScan->ranges.begin() + 60);
+        // Front region: angles from 60 to 119 (inclusive)
+        regions["front"] = *std::min_element(laserScan->ranges.begin() + 60, laserScan->ranges.begin() + 120);
+        // Left region: angles from 120 to 179 (inclusive)
+        regions["left"] = *std::min_element(laserScan->ranges.begin() + 120, laserScan->ranges.end());
+        
         if (myRover.detectObstacle(laserScan)) {
             take_action(regions, cmd_vel); // Pass cmd_vel instead of pub
-            pub.publish(cmd_vel); // Publish the twist message
         }
     }
 }
+
 
 
 int main(int argc, char **argv) {
