@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<robot name="rover" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    
+    <link name="chassis">
+        <inertial>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="5.0"/>
+            <inertia ixx="0.205" ixy="0.0" ixz="0.0" 
+                    iyy="0.105" iyz="0.0" 
+                    izz="0.305"/>
+        </inertial>
+
+        <visual name="">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.5 0.7 0.08"/>
+            </geometry>
+            <material name="">
+                <color rgba="1.0 0.0 0.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.0 0.0 0.0"/>
+            </geometry>
+        </collision>
+
+    </link>
+
+    <gazebo reference ="chassis">
+    <material>Gazebo/Red</material>
+    </gazebo>
+
+    <link name="base_footprint"/>
+    <joint name="base_joint" type="fixed">
+        <origin xyz="0.0 0.0 0.08" rpy="0.0 0.0 0.0"/>
+        <parent link="base_footprint"/>
+        <child link="chassis"/>
+    </joint>
+
+
+    <xacro:include filename="$(find rover)/urdf/wheel.xacro"/>    
+    <xacro:include filename="$(find rover)/urdf/camera.xacro"/>
+    <xacro:include filename="$(find rover)/urdf/lidar.xacro"/>
+    <xacro:include filename="$(find rover)/urdf/imu.xacro"/>
+    <xacro:include filename="$(find rover)/urdf/gps.xacro"/>
+    <xacro:include filename="$(find rover)/urdf/zed2.xacro"/>
+
+<gazebo>
+  <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+    <updateRate>100.0</updateRate>
+    <robotNamespace>/</robotNamespace>
+    <leftFrontJoint>front_left_joint</leftFrontJoint>
+    <rightFrontJoint>front_right_joint</rightFrontJoint>
+    <leftRearJoint>rear_left_joint</leftRearJoint>
+    <rightRearJoint>rear_right_joint</rightRearJoint>
+    <wheelSeparation>0.5</wheelSeparation>
+    <wheelDiameter>0.32</wheelDiameter>
+    <odometry_frame>odom</odometry_frame>
+    <publish_odom>true</publish_odom>
+    <publish_odom_tf>true</publish_odom_tf>
+    <odomTopic>odom</odomTopic>
+    <publish_wheel_tf>true</publish_wheel_tf>
+    <robotBaseFrame>base_footprint</robotBaseFrame>
+    <torque>20</torque>
+    <topicName>cmd_vel</topicName>
+    <broadcastTF>true</broadcastTF>
+  </plugin>
+</gazebo>
+
+</robot>

@@ -1,0 +1,8 @@
+<!-- rover_simulation.launch -->
+<launch>
+    <!-- Start Gazebo with your world and robot model -->
+    <include file="$(find rover)/launch/gazebo.launch" />
+    <!-- Start your C++ code -->
+    <node name="gps" pkg="rover" type="gps" output="screen"/>
+</launch>
+

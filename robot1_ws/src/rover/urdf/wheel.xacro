@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="wheels">
+<xacro:macro name="wheels" params="direction x y mesh">
+    <gazebo reference="${direction}_wheel">
+    <material>Gazebo/Yellow</material>
+    </gazebo>
+
+    <link name="${direction}_wheel">
+        <inertial>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="0.5"/>
+            <inertia ixx="5.12e-3" ixy="0.0" ixz="0.0" iyy="5.12e-3" iyz="0.0" izz="1.62e-3"/>
+        </inertial>
+        <visual name="">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="${mesh}" scale="0.005 0.005 0.005"/>
+            </geometry>
+            <material name="">
+                <color rgba="1.0 1.0 0.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="${mesh}" scale="0.005 0.005 0.005"/>
+            </geometry>
+        </collision>
+    </link>
+    <joint name="${direction}_joint" type="continuous">
+        <origin xyz="${x} ${y} 0.0" rpy="0.0 0.0 1.57"/>
+        <parent link="chassis"/>
+        <child link="${direction}_wheel"/>
+        <axis xyz="0.0 1.0 0.0"/>
+        <limit lower="0.0" upper="0.0" effort="0.0" velocity="0.0"/>
+    </joint>
+        
+    </xacro:macro>
+
+    <xacro:wheels direction="rear_left" x="0.275" y="0.26" mesh="package://rover/meshes/left_tire.stl"/>
+    <xacro:wheels direction="front_left" x="0.275" y="-0.26" mesh="package://rover/meshes/left_tire.stl"/>
+    <xacro:wheels direction="front_right" x="-0.275" y="-0.26" mesh="package://rover/meshes/right_tire.stl"/>
+    <xacro:wheels direction="rear_right" x="-0.275" y="0.26" mesh="package://rover/meshes/right_tire.stl"/>
+
+    
+</robot>
