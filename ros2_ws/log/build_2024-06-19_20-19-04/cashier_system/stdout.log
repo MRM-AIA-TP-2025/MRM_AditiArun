@@ -1,0 +1,13 @@
+[  3%] Built target cashier_system__cpp
+[  6%] [32mBuilding C object CMakeFiles/cashier_system__rosidl_generator_c.dir/rosidl_generator_c/cashier_system/msg/detail/bill__functions.c.o[0m
+[  6%] Built target ament_cmake_python_copy_cashier_system
+[ 16%] [32mBuilding CXX object CMakeFiles/cashier_system__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cashier_system/msg/detail/dds_fastrtps/bill__type_support.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/cashier_system__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cashier_system/msg/detail/bill__type_support.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/cashier_system__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cashier_system/msg/bill__type_support.cpp.o[0m
+running egg_info
+writing cashier_system.egg-info/PKG-INFO
+writing dependency_links to cashier_system.egg-info/dependency_links.txt
+writing top-level names to cashier_system.egg-info/top_level.txt
+reading manifest file 'cashier_system.egg-info/SOURCES.txt'
+writing manifest file 'cashier_system.egg-info/SOURCES.txt'
+[ 16%] Built target ament_cmake_python_build_cashier_system_egg

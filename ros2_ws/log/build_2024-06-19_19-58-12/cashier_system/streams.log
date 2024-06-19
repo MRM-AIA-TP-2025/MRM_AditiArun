@@ -1,0 +1,61 @@
+[0.009s] Invoking command in '/home/aditi/ros2_ws/build/cashier_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/aditi/ros2_ws/src/cashier_system -DCMAKE_INSTALL_PREFIX=/home/aditi/ros2_ws/install/cashier_system
+[0.100s] -- The C compiler identification is GNU 11.4.0
+[0.202s] -- The CXX compiler identification is GNU 11.4.0
+[0.211s] -- Detecting C compiler ABI info
+[0.284s] -- Detecting C compiler ABI info - done
+[0.292s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.292s] -- Detecting C compile features
+[0.293s] -- Detecting C compile features - done
+[0.297s] -- Detecting CXX compiler ABI info
+[0.382s] -- Detecting CXX compiler ABI info - done
+[0.390s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.391s] -- Detecting CXX compile features
+[0.391s] -- Detecting CXX compile features - done
+[0.397s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.545s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.685s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.735s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.740s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.750s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.766s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.788s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.864s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.867s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.971s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.999s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.047s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.058s] -- Looking for pthread.h
+[1.132s] -- Looking for pthread.h - found
+[1.132s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.210s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.211s] -- Found Threads: TRUE  
+[1.387s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[1.601s] -- Configuring done
+[1.617s] -- Generating done
+[1.619s] -- Build files have been written to: /home/aditi/ros2_ws/build/cashier_system
+[1.628s] Invoked command in '/home/aditi/ros2_ws/build/cashier_system' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/aditi/ros2_ws/src/cashier_system -DCMAKE_INSTALL_PREFIX=/home/aditi/ros2_ws/install/cashier_system
+[1.630s] Invoking command in '/home/aditi/ros2_ws/build/cashier_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aditi/ros2_ws/build/cashier_system -- -j8 -l8
+[1.685s] [ 50%] [32mBuilding CXX object CMakeFiles/printer_node.dir/src/printer_node.cpp.o[0m
+[1.685s] [ 50%] [32mBuilding CXX object CMakeFiles/subscriber_node.dir/src/subscriber_node.cpp.o[0m
+[1.686s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o[0m
+[1.996s] [01m[K/home/aditi/ros2_ws/src/cashier_system/src/publisher_node.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kexample_interfaces/msg/bill.hpp: No such file or directory
+[1.996s]     2 | #include [01;31m[K"example_interfaces/msg/bill.hpp"[m[K
+[1.996s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.996s] compilation terminated.
+[1.997s] [01m[K/home/aditi/ros2_ws/src/cashier_system/src/printer_node.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kexample_interfaces/msg/bill.hpp: No such file or directory
+[1.998s]     2 | #include [01;31m[K"example_interfaces/msg/bill.hpp"[m[K
+[1.998s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.998s] [01m[K/home/aditi/ros2_ws/src/cashier_system/src/subscriber_node.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kexample_interfaces/msg/bill.hpp: No such file or directory
+[1.998s]     2 | #include [01;31m[K"example_interfaces/msg/bill.hpp"[m[K
+[1.998s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.998s] compilation terminated.
+[1.998s] compilation terminated.
+[1.999s] gmake[2]: *** [CMakeFiles/publisher_node.dir/build.make:76: CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o] Error 1
+[1.999s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/publisher_node.dir/all] Error 2
+[1.999s] gmake[1]: *** Waiting for unfinished jobs....
+[2.000s] gmake[2]: *** [CMakeFiles/subscriber_node.dir/build.make:76: CMakeFiles/subscriber_node.dir/src/subscriber_node.cpp.o] Error 1
+[2.001s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/subscriber_node.dir/all] Error 2
+[2.001s] gmake[2]: *** [CMakeFiles/printer_node.dir/build.make:76: CMakeFiles/printer_node.dir/src/printer_node.cpp.o] Error 1
+[2.001s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/printer_node.dir/all] Error 2
+[2.001s] gmake: *** [Makefile:146: all] Error 2
+[2.003s] Invoked command in '/home/aditi/ros2_ws/build/cashier_system' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aditi/ros2_ws/build/cashier_system -- -j8 -l8

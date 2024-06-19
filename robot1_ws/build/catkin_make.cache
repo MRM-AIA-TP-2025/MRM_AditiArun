@@ -1,2 +1,0 @@
-rover
--DCATKIN_DEVEL_PREFIX=/home/aditi/robot1_ws/devel -DCMAKE_INSTALL_PREFIX=/home/aditi/robot1_ws/install -G Unix Makefiles

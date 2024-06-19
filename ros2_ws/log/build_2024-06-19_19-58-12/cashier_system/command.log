@@ -1,0 +1,4 @@
+Invoking command in '/home/aditi/ros2_ws/build/cashier_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/aditi/ros2_ws/src/cashier_system -DCMAKE_INSTALL_PREFIX=/home/aditi/ros2_ws/install/cashier_system
+Invoked command in '/home/aditi/ros2_ws/build/cashier_system' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/aditi/ros2_ws/src/cashier_system -DCMAKE_INSTALL_PREFIX=/home/aditi/ros2_ws/install/cashier_system
+Invoking command in '/home/aditi/ros2_ws/build/cashier_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aditi/ros2_ws/build/cashier_system -- -j8 -l8
+Invoked command in '/home/aditi/ros2_ws/build/cashier_system' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aditi/ros2_ws/build/cashier_system -- -j8 -l8

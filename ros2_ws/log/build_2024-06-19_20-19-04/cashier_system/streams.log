@@ -1,0 +1,47 @@
+[0.010s] Invoking command in '/home/aditi/ros2_ws/build/cashier_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aditi/ros2_ws/build/cashier_system -- -j8 -l8
+[0.059s] [  3%] Built target cashier_system__cpp
+[0.060s] [  6%] [32mBuilding C object CMakeFiles/cashier_system__rosidl_generator_c.dir/rosidl_generator_c/cashier_system/msg/detail/bill__functions.c.o[0m
+[0.072s] [  6%] Built target ament_cmake_python_copy_cashier_system
+[0.082s] [ 16%] [32mBuilding CXX object CMakeFiles/cashier_system__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cashier_system/msg/detail/dds_fastrtps/bill__type_support.cpp.o[0m
+[0.082s] [ 16%] [32mBuilding CXX object CMakeFiles/cashier_system__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cashier_system/msg/detail/bill__type_support.cpp.o[0m
+[0.083s] [ 16%] [32mBuilding CXX object CMakeFiles/cashier_system__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cashier_system/msg/bill__type_support.cpp.o[0m
+[0.084s] In file included from [01m[K/home/aditi/ros2_ws/build/cashier_system/rosidl_generator_c/cashier_system/msg/detail/bill__functions.h:19[m[K,
+[0.085s]                  from [01m[K/home/aditi/ros2_ws/build/cashier_system/rosidl_generator_c/cashier_system/msg/detail/bill__functions.c:4[m[K:
+[0.085s] [01m[K/home/aditi/ros2_ws/build/cashier_system/rosidl_generator_c/cashier_system/msg/detail/bill__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Kbuiltin_interfaces/msg/detail/time__struct.h: No such file or directory
+[0.085s]    22 | #include [01;31m[K"builtin_interfaces/msg/detail/time__struct.h"[m[K
+[0.085s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.085s] compilation terminated.
+[0.086s] gmake[2]: *** [CMakeFiles/cashier_system__rosidl_generator_c.dir/build.make:105: CMakeFiles/cashier_system__rosidl_generator_c.dir/rosidl_generator_c/cashier_system/msg/detail/bill__functions.c.o] Error 1
+[0.086s] gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/cashier_system__rosidl_generator_c.dir/all] Error 2
+[0.086s] gmake[1]: *** Waiting for unfinished jobs....
+[0.159s] In file included from [01m[K/home/aditi/ros2_ws/build/cashier_system/rosidl_typesupport_introspection_cpp/cashier_system/msg/detail/bill__type_support.cpp:12[m[K:
+[0.159s] [01m[K/home/aditi/ros2_ws/build/cashier_system/rosidl_generator_cpp/cashier_system/msg/detail/bill__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kbuiltin_interfaces/msg/detail/time__struct.hpp: No such file or directory
+[0.159s]    20 | #include [01;31m[K"builtin_interfaces/msg/detail/time__struct.hpp"[m[K
+[0.159s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.159s] compilation terminated.
+[0.160s] In file included from [01m[K/home/aditi/ros2_ws/build/cashier_system/rosidl_typesupport_cpp/cashier_system/msg/bill__type_support.cpp:7[m[K:
+[0.160s] [01m[K/home/aditi/ros2_ws/build/cashier_system/rosidl_generator_cpp/cashier_system/msg/detail/bill__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kbuiltin_interfaces/msg/detail/time__struct.hpp: No such file or directory
+[0.160s]    20 | #include [01;31m[K"builtin_interfaces/msg/detail/time__struct.hpp"[m[K
+[0.160s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.161s] compilation terminated.
+[0.161s] gmake[2]: *** [CMakeFiles/cashier_system__rosidl_typesupport_introspection_cpp.dir/build.make:91: CMakeFiles/cashier_system__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cashier_system/msg/detail/bill__type_support.cpp.o] Error 1
+[0.161s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/cashier_system__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+[0.162s] gmake[2]: *** [CMakeFiles/cashier_system__rosidl_typesupport_cpp.dir/build.make:86: CMakeFiles/cashier_system__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cashier_system/msg/bill__type_support.cpp.o] Error 1
+[0.162s] gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/cashier_system__rosidl_typesupport_cpp.dir/all] Error 2
+[0.165s] In file included from [01m[K/home/aditi/ros2_ws/build/cashier_system/rosidl_typesupport_fastrtps_cpp/cashier_system/msg/detail/bill__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[0.165s]                  from [01m[K/home/aditi/ros2_ws/build/cashier_system/rosidl_typesupport_fastrtps_cpp/cashier_system/msg/detail/dds_fastrtps/bill__type_support.cpp:4[m[K:
+[0.165s] [01m[K/home/aditi/ros2_ws/build/cashier_system/rosidl_generator_cpp/cashier_system/msg/detail/bill__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kbuiltin_interfaces/msg/detail/time__struct.hpp: No such file or directory
+[0.165s]    20 | #include [01;31m[K"builtin_interfaces/msg/detail/time__struct.hpp"[m[K
+[0.165s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.165s] compilation terminated.
+[0.166s] gmake[2]: *** [CMakeFiles/cashier_system__rosidl_typesupport_fastrtps_cpp.dir/build.make:91: CMakeFiles/cashier_system__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cashier_system/msg/detail/dds_fastrtps/bill__type_support.cpp.o] Error 1
+[0.166s] gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/cashier_system__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[0.354s] running egg_info
+[0.355s] writing cashier_system.egg-info/PKG-INFO
+[0.355s] writing dependency_links to cashier_system.egg-info/dependency_links.txt
+[0.355s] writing top-level names to cashier_system.egg-info/top_level.txt
+[0.357s] reading manifest file 'cashier_system.egg-info/SOURCES.txt'
+[0.358s] writing manifest file 'cashier_system.egg-info/SOURCES.txt'
+[0.383s] [ 16%] Built target ament_cmake_python_build_cashier_system_egg
+[0.384s] gmake: *** [Makefile:146: all] Error 2
+[0.387s] Invoked command in '/home/aditi/ros2_ws/build/cashier_system' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aditi/ros2_ws/build/cashier_system -- -j8 -l8

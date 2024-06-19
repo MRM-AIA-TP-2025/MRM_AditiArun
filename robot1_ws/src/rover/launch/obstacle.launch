@@ -1,8 +1,0 @@
-
-<launch>
-   
-    <include file="$(find rover)/launch/gazebo.launch" />
-   
-    <node name="obstacle" pkg="rover" type="obstacle" output="screen"/>
-</launch>
-
