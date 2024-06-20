@@ -1,6 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
-
-#include "cashier_system/msg/bill.hpp" 
+#include "cashier_system/msg/bill.hpp"
 #include "rcl_interfaces/srv/set_parameters.hpp"
 
 class SubscriberNode : public rclcpp::Node
@@ -8,58 +7,32 @@ class SubscriberNode : public rclcpp::Node
 public:
   SubscriberNode() : Node("subscriber_node")
   {
-    subscription_ = this->create_subscription<example_interfaces::msg::Bill>(
-        "bill", 10, std::bind(&SubscriberNode::bill_callback, this, std::placeholders::_1));
-    last_bill_ = example_interfaces::msg::Bill();
+    // Declare parameters
     this->declare_parameter<int>("inventory", 100);
-    this->declare_parameter<float>("income", 0.0);
+    this->declare_parameter<double>("income", 0.0);
+
+    subscription_ = this->create_subscription<cashier_system::msg::Bill>(
+        "bill", 10, std::bind(&SubscriberNode::bill_callback, this, std::placeholders::_1));
   }
 
 private:
-  void bill_callback(const example_interfaces::msg::Bill::SharedPtr msg)
+  void bill_callback(const cashier_system::msg::Bill::SharedPtr msg)
   {
-    last_bill_ = *msg;
-    update_parameters(msg->quantity, msg->total);
+    int inventory = this->get_parameter("inventory").as_int();
+    double income = this->get_parameter("income").as_double();
+
+    inventory -= msg->quantity;
+    income += msg->total;
+
+    RCLCPP_INFO(this->get_logger(), "Received Bill: %d, Updated Inventory: %d, Updated Income: %.2f",
+                msg->bill_number, inventory, income);
+
+    // Update parameters
+    this->set_parameter(rclcpp::Parameter("inventory", inventory));
+    this->set_parameter(rclcpp::Parameter("income", income));
   }
 
-  void update_parameters(int quantity, float total)
-  {
-    auto client = this->create_client<rcl_interfaces::srv::SetParameters>("/parameter_server/set_parameters");
-    while (!client->wait_for_service(std::chrono::seconds(1)))
-    {
-      RCLCPP_WARN(this->get_logger(), "Waiting for the parameter server...");
-    }
-
-    auto request = std::make_shared<rcl_interfaces::srv::SetParameters::Request>();
-    auto inventory_param = rcl_interfaces::msg::Parameter();
-    auto income_param = rcl_interfaces::msg::Parameter();
-
-    this->get_parameter("inventory", inventory_param.value.integer_value);
-    this->get_parameter("income", income_param.value.double_value);
-
-    inventory_param.name = "inventory";
-    inventory_param.value.integer_value -= quantity;
-
-    income_param.name = "income";
-    income_param.value.double_value += total;
-
-    request->parameters.push_back(inventory_param);
-    request->parameters.push_back(income_param);
-
-    auto future = client->async_send_request(request);
-    try
-    {
-      auto response = future.get();
-      RCLCPP_INFO(this->get_logger(), "Parameters updated successfully.");
-    }
-    catch (const std::exception &e)
-    {
-      RCLCPP_ERROR(this->get_logger(), "Failed to update parameters: %s", e.what());
-    }
-  }
-
-  rclcpp::Subscription<example_interfaces::msg::Bill>::SharedPtr subscription_;
-  example_interfaces::msg::Bill last_bill_;
+  rclcpp::Subscription<cashier_system::msg::Bill>::SharedPtr subscription_;
 };
 
 int main(int argc, char *argv[])

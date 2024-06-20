@@ -1,14 +1,13 @@
-
 #include "rclcpp/rclcpp.hpp"
-#include "cashier_system/msg/bill.hpp"  
-
+#include "cashier_system/msg/bill.hpp"
+#include <iostream>
 
 class PublisherNode : public rclcpp::Node
 {
 public:
   PublisherNode() : Node("publisher_node")
   {
-    publisher_ = this->create_publisher<example_interfaces::msg::Bill>("bill", 10);
+    publisher_ = this->create_publisher<cashier_system::msg::Bill>("bill", 10);
     timer_ = this->create_wall_timer(
         std::chrono::seconds(1), std::bind(&PublisherNode::publish_bill, this));
   }
@@ -16,12 +15,15 @@ public:
 private:
   void publish_bill()
   {
-    auto message = example_interfaces::msg::Bill();
+    auto message = cashier_system::msg::Bill();
+
+    std::cout << "Enter quantity: ";
+    std::cin >> message.quantity;
+    std::cout << "Enter price: ";
+    std::cin >> message.price;
+    message.total = message.quantity * message.price;
     message.bill_number = current_bill_number_;
     message.timestamp = this->now();
-    message.quantity = 10;
-    message.price = 5.0;
-    message.total = message.quantity * message.price;
 
     RCLCPP_INFO(this->get_logger(), "Publishing Bill: %d", message.bill_number);
     publisher_->publish(message);
@@ -29,7 +31,7 @@ private:
     current_bill_number_++;
   }
 
-  rclcpp::Publisher<example_interfaces::msg::Bill>::SharedPtr publisher_;
+  rclcpp::Publisher<cashier_system::msg::Bill>::SharedPtr publisher_;
   rclcpp::TimerBase::SharedPtr timer_;
   int current_bill_number_ = 1;
 };

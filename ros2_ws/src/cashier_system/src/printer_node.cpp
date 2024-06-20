@@ -1,57 +1,66 @@
 #include "rclcpp/rclcpp.hpp"
 #include "cashier_system/msg/bill.hpp"
-#include "rcl_interfaces/srv/get_parameters.hpp"
+#include <iostream>
 
 class PrinterNode : public rclcpp::Node
 {
 public:
   PrinterNode() : Node("printer_node")
   {
-    subscription_ = this->create_subscription<example_interfaces::msg::Bill>(
+    subscription_ = this->create_subscription<cashier_system::msg::Bill>(
         "bill", 10, std::bind(&PrinterNode::bill_callback, this, std::placeholders::_1));
-    timer_ = this->create_wall_timer(
-        std::chrono::seconds(5), std::bind(&PrinterNode::print_status, this));
+
+    this->declare_parameter<int>("inventory", 100);
+    this->declare_parameter<double>("income", 0.0);
+
+    param_event_subscriber_ = this->create_subscription<rcl_interfaces::msg::ParameterEvent>(
+        "/parameter_events", 10, std::bind(&PrinterNode::parameter_event_callback, this, std::placeholders::_1));
+
+    std::thread(&PrinterNode::listen_for_input, this).detach();
   }
 
 private:
-  void bill_callback(const example_interfaces::msg::Bill::SharedPtr msg)
+  void bill_callback(const cashier_system::msg::Bill::SharedPtr msg)
   {
     last_bill_ = *msg;
   }
 
-  void print_status()
+  void parameter_event_callback(const rcl_interfaces::msg::ParameterEvent::SharedPtr event)
   {
-    RCLCPP_INFO(this->get_logger(), "Last Bill Number: %d", last_bill_.bill_number);
-    RCLCPP_INFO(this->get_logger(), "Last Bill Total: %.2f", last_bill_.total);
-
-    auto client = this->create_client<rcl_interfaces::srv::GetParameters>("/parameter_server/get_parameters");
-    while (!client->wait_for_service(std::chrono::seconds(1)))
+    for (const auto &changed_parameter : event->changed_parameters)
     {
-      RCLCPP_WARN(this->get_logger(), "Waiting for the parameter server...");
-    }
-
-    auto request = std::make_shared<rcl_interfaces::srv::GetParameters::Request>();
-    request->names.push_back("inventory");
-    request->names.push_back("income");
-
-    auto future = client->async_send_request(request);
-    try
-    {
-      auto response = future.get();
-      int inventory = response->values[0].integer_value;
-      float income = response->values[1].double_value;
-      RCLCPP_INFO(this->get_logger(), "Current Inventory: %d", inventory);
-      RCLCPP_INFO(this->get_logger(), "Current Income: %.2f", income);
-    }
-    catch (const std::exception &e)
-    {
-      RCLCPP_ERROR(this->get_logger(), "Failed to get parameters: %s", e.what());
+      if (changed_parameter.name == "inventory")
+      {
+        inventory_ = changed_parameter.value.integer_value;
+      }
+      else if (changed_parameter.name == "income")
+      {
+        income_ = changed_parameter.value.double_value;
+      }
     }
   }
 
-  rclcpp::Subscription<example_interfaces::msg::Bill>::SharedPtr subscription_;
-  rclcpp::TimerBase::SharedPtr timer_;
-  example_interfaces::msg::Bill last_bill_;
+  void listen_for_input()
+  {
+    while (rclcpp::ok())
+    {
+      std::string input;
+      std::getline(std::cin, input);
+
+      std::cout << "Last Bill Number: " << last_bill_.bill_number << std::endl;
+      std::cout << "Last Bill Quantity: " << last_bill_.quantity << std::endl;
+      std::cout << "Last Bill Price: " << last_bill_.price << std::endl;
+      std::cout << "Last Bill Total: " << last_bill_.total << std::endl;
+      std::cout << "Current Inventory: " << inventory_ << std::endl;
+      std::cout << "Current Income: " << income_ << std::endl;
+    }
+  }
+
+  rclcpp::Subscription<cashier_system::msg::Bill>::SharedPtr subscription_;
+  rclcpp::Subscription<rcl_interfaces::msg::ParameterEvent>::SharedPtr param_event_subscriber_;
+  cashier_system::msg::Bill last_bill_;
+  int inventory_;
+  double income_;
 };
 
 int main(int argc, char *argv[])

@@ -78,6 +78,8 @@ rosidl_typesupport_fastrtps_c/cashier_system/msg/detail/bill__rosidl_typesupport
 rosidl_typesupport_fastrtps_c/cashier_system/msg/detail/bill__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em
 rosidl_typesupport_fastrtps_c/cashier_system/msg/detail/bill__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em
 rosidl_typesupport_fastrtps_c/cashier_system/msg/detail/bill__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/cashier_system/msg/Bill.idl
+rosidl_typesupport_fastrtps_c/cashier_system/msg/detail/bill__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_typesupport_fastrtps_c/cashier_system/msg/detail/bill__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aditi/ros2_ws/build/cashier_system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /home/aditi/ros2_ws/build/cashier_system/rosidl_typesupport_fastrtps_c__arguments.json
 
@@ -107,11 +109,13 @@ cashier_system__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
 
 libcashier_system__rosidl_typesupport_fastrtps_c.so: CMakeFiles/cashier_system__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cashier_system/msg/detail/bill__type_support_c.cpp.o
 libcashier_system__rosidl_typesupport_fastrtps_c.so: CMakeFiles/cashier_system__rosidl_typesupport_fastrtps_c.dir/build.make
-libcashier_system__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libcashier_system__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 libcashier_system__rosidl_typesupport_fastrtps_c.so: libcashier_system__rosidl_generator_c.so
+libcashier_system__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+libcashier_system__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 libcashier_system__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 libcashier_system__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librmw.so
+libcashier_system__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+libcashier_system__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libcashier_system__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcashier_system__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 libcashier_system__rosidl_typesupport_fastrtps_c.so: CMakeFiles/cashier_system__rosidl_typesupport_fastrtps_c.dir/link.txt

@@ -87,6 +87,8 @@ rosidl_generator_py/cashier_system/_cashier_system_s.ep.rosidl_typesupport_fastr
 rosidl_generator_py/cashier_system/_cashier_system_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/cashier_system/_cashier_system_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/cashier_system/_cashier_system_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/cashier_system/msg/Bill.idl
+rosidl_generator_py/cashier_system/_cashier_system_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_py/cashier_system/_cashier_system_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aditi/ros2_ws/build/cashier_system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/aditi/ros2_ws/build/cashier_system/cashier_system__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/aditi/ros2_ws/build/cashier_system/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 

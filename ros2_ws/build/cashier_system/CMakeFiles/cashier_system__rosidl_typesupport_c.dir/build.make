@@ -76,6 +76,8 @@ rosidl_typesupport_c/cashier_system/msg/bill__type_support.cpp: /opt/ros/humble/
 rosidl_typesupport_c/cashier_system/msg/bill__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em
 rosidl_typesupport_c/cashier_system/msg/bill__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em
 rosidl_typesupport_c/cashier_system/msg/bill__type_support.cpp: rosidl_adapter/cashier_system/msg/Bill.idl
+rosidl_typesupport_c/cashier_system/msg/bill__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_typesupport_c/cashier_system/msg/bill__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aditi/ros2_ws/build/cashier_system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support dispatch for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c --generator-arguments-file /home/aditi/ros2_ws/build/cashier_system/rosidl_typesupport_c__arguments.json --typesupports rosidl_typesupport_fastrtps_c rosidl_typesupport_introspection_c
 
@@ -103,7 +105,9 @@ cashier_system__rosidl_typesupport_c_EXTERNAL_OBJECTS =
 libcashier_system__rosidl_typesupport_c.so: CMakeFiles/cashier_system__rosidl_typesupport_c.dir/rosidl_typesupport_c/cashier_system/msg/bill__type_support.cpp.o
 libcashier_system__rosidl_typesupport_c.so: CMakeFiles/cashier_system__rosidl_typesupport_c.dir/build.make
 libcashier_system__rosidl_typesupport_c.so: libcashier_system__rosidl_generator_c.so
+libcashier_system__rosidl_typesupport_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 libcashier_system__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_typesupport_c.so
+libcashier_system__rosidl_typesupport_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libcashier_system__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcashier_system__rosidl_typesupport_c.so: /opt/ros/humble/lib/librcutils.so
 libcashier_system__rosidl_typesupport_c.so: CMakeFiles/cashier_system__rosidl_typesupport_c.dir/link.txt

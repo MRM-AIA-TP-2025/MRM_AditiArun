@@ -83,6 +83,8 @@ rosidl_generator_c/cashier_system/msg/bill.h: /opt/ros/humble/share/rosidl_gener
 rosidl_generator_c/cashier_system/msg/bill.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/cashier_system/msg/bill.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/cashier_system/msg/bill.h: rosidl_adapter/cashier_system/msg/Bill.idl
+rosidl_generator_c/cashier_system/msg/bill.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_c/cashier_system/msg/bill.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aditi/ros2_ws/build/cashier_system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/aditi/ros2_ws/build/cashier_system/rosidl_generator_c__arguments.json
 
@@ -121,6 +123,7 @@ cashier_system__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libcashier_system__rosidl_generator_c.so: CMakeFiles/cashier_system__rosidl_generator_c.dir/rosidl_generator_c/cashier_system/msg/detail/bill__functions.c.o
 libcashier_system__rosidl_generator_c.so: CMakeFiles/cashier_system__rosidl_generator_c.dir/build.make
+libcashier_system__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libcashier_system__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcashier_system__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libcashier_system__rosidl_generator_c.so: CMakeFiles/cashier_system__rosidl_generator_c.dir/link.txt

@@ -78,6 +78,8 @@ rosidl_typesupport_fastrtps_cpp/cashier_system/msg/detail/dds_fastrtps/bill__typ
 rosidl_typesupport_fastrtps_cpp/cashier_system/msg/detail/dds_fastrtps/bill__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em
 rosidl_typesupport_fastrtps_cpp/cashier_system/msg/detail/dds_fastrtps/bill__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em
 rosidl_typesupport_fastrtps_cpp/cashier_system/msg/detail/dds_fastrtps/bill__type_support.cpp: rosidl_adapter/cashier_system/msg/Bill.idl
+rosidl_typesupport_fastrtps_cpp/cashier_system/msg/detail/dds_fastrtps/bill__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_typesupport_fastrtps_cpp/cashier_system/msg/detail/dds_fastrtps/bill__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aditi/ros2_ws/build/cashier_system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support for eProsima Fast-RTPS"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp --generator-arguments-file /home/aditi/ros2_ws/build/cashier_system/rosidl_typesupport_fastrtps_cpp__arguments.json
 
@@ -107,6 +109,7 @@ cashier_system__rosidl_typesupport_fastrtps_cpp_EXTERNAL_OBJECTS =
 
 libcashier_system__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/cashier_system__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cashier_system/msg/detail/dds_fastrtps/bill__type_support.cpp.o
 libcashier_system__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/cashier_system__rosidl_typesupport_fastrtps_cpp.dir/build.make
+libcashier_system__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libcashier_system__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 libcashier_system__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 libcashier_system__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librmw.so

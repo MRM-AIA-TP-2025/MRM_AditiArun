@@ -1,2 +1,0 @@
-Invoking command in '/home/aditi/ros2_ws/build/cashier_system': /usr/bin/cmake --build /home/aditi/ros2_ws/build/cashier_system -- -j8 -l8
-Invoked command in '/home/aditi/ros2_ws/build/cashier_system' returned '2': /usr/bin/cmake --build /home/aditi/ros2_ws/build/cashier_system -- -j8 -l8
