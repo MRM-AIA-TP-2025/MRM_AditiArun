@@ -1,0 +1,33 @@
+[1.026s] Invoking command in '/home/aditi/ERC/leo_worlds': PYTHONPATH=/home/aditi/ERC/build/leo_worlds/prefix_override:/home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/leo_worlds build --build-base /home/aditi/ERC/build/leo_worlds/build install --record /home/aditi/ERC/build/leo_worlds/install.log --single-version-externally-managed install_data
+[1.303s] running egg_info
+[1.304s] creating ../build/leo_worlds/leo_worlds.egg-info
+[1.304s] writing ../build/leo_worlds/leo_worlds.egg-info/PKG-INFO
+[1.304s] writing dependency_links to ../build/leo_worlds/leo_worlds.egg-info/dependency_links.txt
+[1.304s] writing entry points to ../build/leo_worlds/leo_worlds.egg-info/entry_points.txt
+[1.304s] writing requirements to ../build/leo_worlds/leo_worlds.egg-info/requires.txt
+[1.304s] writing top-level names to ../build/leo_worlds/leo_worlds.egg-info/top_level.txt
+[1.305s] writing manifest file '../build/leo_worlds/leo_worlds.egg-info/SOURCES.txt'
+[1.306s] reading manifest file '../build/leo_worlds/leo_worlds.egg-info/SOURCES.txt'
+[1.307s] writing manifest file '../build/leo_worlds/leo_worlds.egg-info/SOURCES.txt'
+[1.307s] running build
+[1.307s] running build_py
+[1.307s] creating /home/aditi/ERC/build/leo_worlds/build
+[1.307s] creating /home/aditi/ERC/build/leo_worlds/build/lib
+[1.307s] creating /home/aditi/ERC/build/leo_worlds/build/lib/leo_worlds
+[1.307s] copying leo_worlds/__init__.py -> /home/aditi/ERC/build/leo_worlds/build/lib/leo_worlds
+[1.307s] running install
+[1.308s] running install_lib
+[1.308s] creating /home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages/leo_worlds
+[1.308s] copying /home/aditi/ERC/build/leo_worlds/build/lib/leo_worlds/__init__.py -> /home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages/leo_worlds
+[1.309s] byte-compiling /home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages/leo_worlds/__init__.py to __init__.cpython-310.pyc
+[1.309s] running install_data
+[1.309s] creating /home/aditi/ERC/install/leo_worlds/share/ament_index
+[1.315s] creating /home/aditi/ERC/install/leo_worlds/share/ament_index/resource_index
+[1.315s] creating /home/aditi/ERC/install/leo_worlds/share/ament_index/resource_index/packages
+[1.315s] copying resource/leo_worlds -> /home/aditi/ERC/install/leo_worlds/share/ament_index/resource_index/packages
+[1.315s] copying package.xml -> /home/aditi/ERC/install/leo_worlds/share/leo_worlds
+[1.315s] running install_egg_info
+[1.317s] Copying ../build/leo_worlds/leo_worlds.egg-info to /home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages/leo_worlds-0.0.0-py3.10.egg-info
+[1.317s] running install_scripts
+[1.339s] writing list of installed files to '/home/aditi/ERC/build/leo_worlds/install.log'
+[1.365s] Invoked command in '/home/aditi/ERC/leo_worlds' returned '0': PYTHONPATH=/home/aditi/ERC/build/leo_worlds/prefix_override:/home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/leo_worlds build --build-base /home/aditi/ERC/build/leo_worlds/build install --record /home/aditi/ERC/build/leo_worlds/install.log --single-version-externally-managed install_data

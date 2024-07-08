@@ -1,0 +1,31 @@
+running egg_info
+creating ../build/leo_worlds/leo_worlds.egg-info
+writing ../build/leo_worlds/leo_worlds.egg-info/PKG-INFO
+writing dependency_links to ../build/leo_worlds/leo_worlds.egg-info/dependency_links.txt
+writing entry points to ../build/leo_worlds/leo_worlds.egg-info/entry_points.txt
+writing requirements to ../build/leo_worlds/leo_worlds.egg-info/requires.txt
+writing top-level names to ../build/leo_worlds/leo_worlds.egg-info/top_level.txt
+writing manifest file '../build/leo_worlds/leo_worlds.egg-info/SOURCES.txt'
+reading manifest file '../build/leo_worlds/leo_worlds.egg-info/SOURCES.txt'
+writing manifest file '../build/leo_worlds/leo_worlds.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/aditi/ERC/build/leo_worlds/build
+creating /home/aditi/ERC/build/leo_worlds/build/lib
+creating /home/aditi/ERC/build/leo_worlds/build/lib/leo_worlds
+copying leo_worlds/__init__.py -> /home/aditi/ERC/build/leo_worlds/build/lib/leo_worlds
+running install
+running install_lib
+creating /home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages/leo_worlds
+copying /home/aditi/ERC/build/leo_worlds/build/lib/leo_worlds/__init__.py -> /home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages/leo_worlds
+byte-compiling /home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages/leo_worlds/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/aditi/ERC/install/leo_worlds/share/ament_index
+creating /home/aditi/ERC/install/leo_worlds/share/ament_index/resource_index
+creating /home/aditi/ERC/install/leo_worlds/share/ament_index/resource_index/packages
+copying resource/leo_worlds -> /home/aditi/ERC/install/leo_worlds/share/ament_index/resource_index/packages
+copying package.xml -> /home/aditi/ERC/install/leo_worlds/share/leo_worlds
+running install_egg_info
+Copying ../build/leo_worlds/leo_worlds.egg-info to /home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages/leo_worlds-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/aditi/ERC/build/leo_worlds/install.log'
