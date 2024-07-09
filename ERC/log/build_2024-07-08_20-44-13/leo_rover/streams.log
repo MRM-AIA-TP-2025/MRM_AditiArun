@@ -1,0 +1,23 @@
+[0.989s] Invoking command in '/home/aditi/ERC/build/leo_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --build /home/aditi/ERC/build/leo_rover -- -j8 -l8
+[1.996s] Invoked command in '/home/aditi/ERC/build/leo_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --build /home/aditi/ERC/build/leo_rover -- -j8 -l8
+[2.097s] Invoking command in '/home/aditi/ERC/build/leo_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --install /home/aditi/ERC/build/leo_rover
+[2.126s] -- Install configuration: ""
+[2.126s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/leo_rover/launch
+[2.127s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/leo_rover/launch/temp.launch.xml
+[2.127s] -- Installing: /home/aditi/ERC/install/leo_rover/share/leo_rover/launch/xmlTest.launch.xml
+[2.128s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/ament_index/resource_index/package_run_dependencies/leo_rover
+[2.129s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/ament_index/resource_index/parent_prefix_path/leo_rover
+[2.129s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/leo_rover/environment/ament_prefix_path.sh
+[2.129s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/leo_rover/environment/ament_prefix_path.dsv
+[2.130s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/leo_rover/environment/path.sh
+[2.130s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/leo_rover/environment/path.dsv
+[2.130s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/leo_rover/local_setup.bash
+[2.130s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/leo_rover/local_setup.sh
+[2.132s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/leo_rover/local_setup.zsh
+[2.133s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/leo_rover/local_setup.dsv
+[2.134s] -- Installing: /home/aditi/ERC/install/leo_rover/share/leo_rover/package.dsv
+[2.134s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/ament_index/resource_index/packages/leo_rover
+[2.135s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/leo_rover/cmake/leo_roverConfig.cmake
+[2.135s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/leo_rover/cmake/leo_roverConfig-version.cmake
+[2.136s] -- Up-to-date: /home/aditi/ERC/install/leo_rover/share/leo_rover/package.xml
+[2.138s] Invoked command in '/home/aditi/ERC/build/leo_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --install /home/aditi/ERC/build/leo_rover
