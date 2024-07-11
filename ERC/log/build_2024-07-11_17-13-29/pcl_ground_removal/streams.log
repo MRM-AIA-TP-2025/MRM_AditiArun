@@ -1,0 +1,22 @@
+[0.566s] Invoking command in '/home/aditi/ERC/build/pcl_ground_removal': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --build /home/aditi/ERC/build/pcl_ground_removal -- -j8 -l8
+[0.638s] [100%] Built target ground_removal_node
+[0.655s] Invoked command in '/home/aditi/ERC/build/pcl_ground_removal' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --build /home/aditi/ERC/build/pcl_ground_removal -- -j8 -l8
+[0.684s] Invoking command in '/home/aditi/ERC/build/pcl_ground_removal': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --install /home/aditi/ERC/build/pcl_ground_removal
+[0.690s] -- Install configuration: ""
+[0.691s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/lib/pcl_ground_removal/ground_removal_node
+[0.691s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/ament_index/resource_index/package_run_dependencies/pcl_ground_removal
+[0.691s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/ament_index/resource_index/parent_prefix_path/pcl_ground_removal
+[0.691s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/ament_prefix_path.sh
+[0.691s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/ament_prefix_path.dsv
+[0.692s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/path.sh
+[0.692s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/path.dsv
+[0.692s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.bash
+[0.692s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.sh
+[0.692s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.zsh
+[0.692s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.dsv
+[0.692s] -- Installing: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.dsv
+[0.692s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/ament_index/resource_index/packages/pcl_ground_removal
+[0.692s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/cmake/pcl_ground_removalConfig.cmake
+[0.692s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/cmake/pcl_ground_removalConfig-version.cmake
+[0.693s] -- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.xml
+[0.694s] Invoked command in '/home/aditi/ERC/build/pcl_ground_removal' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --install /home/aditi/ERC/build/pcl_ground_removal

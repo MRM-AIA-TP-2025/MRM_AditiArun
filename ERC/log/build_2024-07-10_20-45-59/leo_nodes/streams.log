@@ -1,0 +1,26 @@
+[1.154s] Invoking command in '/home/aditi/ERC/leo_nodes': PYTHONPATH=/home/aditi/ERC/build/leo_nodes/prefix_override:/home/aditi/ERC/install/leo_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/leo_nodes build --build-base /home/aditi/ERC/build/leo_nodes/build install --record /home/aditi/ERC/build/leo_nodes/install.log --single-version-externally-managed install_data
+[1.461s] running egg_info
+[1.461s] writing ../build/leo_nodes/leo_nodes.egg-info/PKG-INFO
+[1.461s] writing dependency_links to ../build/leo_nodes/leo_nodes.egg-info/dependency_links.txt
+[1.461s] writing entry points to ../build/leo_nodes/leo_nodes.egg-info/entry_points.txt
+[1.462s] writing requirements to ../build/leo_nodes/leo_nodes.egg-info/requires.txt
+[1.462s] writing top-level names to ../build/leo_nodes/leo_nodes.egg-info/top_level.txt
+[1.463s] reading manifest file '../build/leo_nodes/leo_nodes.egg-info/SOURCES.txt'
+[1.464s] writing manifest file '../build/leo_nodes/leo_nodes.egg-info/SOURCES.txt'
+[1.464s] running build
+[1.464s] running build_py
+[1.465s] running install
+[1.465s] running install_lib
+[1.466s] running install_data
+[1.467s] running install_egg_info
+[1.468s] removing '/home/aditi/ERC/install/leo_nodes/lib/python3.10/site-packages/leo_nodes-0.0.0-py3.10.egg-info' (and everything under it)
+[1.469s] Copying ../build/leo_nodes/leo_nodes.egg-info to /home/aditi/ERC/install/leo_nodes/lib/python3.10/site-packages/leo_nodes-0.0.0-py3.10.egg-info
+[1.469s] running install_scripts
+[1.489s] Installing cmd_vel_relay script to /home/aditi/ERC/install/leo_nodes/lib/leo_nodes
+[1.489s] Installing ground_truth_filter script to /home/aditi/ERC/install/leo_nodes/lib/leo_nodes
+[1.490s] Installing odom_compat_node script to /home/aditi/ERC/install/leo_nodes/lib/leo_nodes
+[1.490s] Installing pdu_node script to /home/aditi/ERC/install/leo_nodes/lib/leo_nodes
+[1.490s] Installing zed2_imu_transform_broadcaster script to /home/aditi/ERC/install/leo_nodes/lib/leo_nodes
+[1.490s] Installing zed2_imu_transform_publisher script to /home/aditi/ERC/install/leo_nodes/lib/leo_nodes
+[1.491s] writing list of installed files to '/home/aditi/ERC/build/leo_nodes/install.log'
+[1.523s] Invoked command in '/home/aditi/ERC/leo_nodes' returned '0': PYTHONPATH=/home/aditi/ERC/build/leo_nodes/prefix_override:/home/aditi/ERC/install/leo_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/leo_nodes build --build-base /home/aditi/ERC/build/leo_nodes/build install --record /home/aditi/ERC/build/leo_nodes/install.log --single-version-externally-managed install_data

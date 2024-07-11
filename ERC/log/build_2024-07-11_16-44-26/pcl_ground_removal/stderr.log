@@ -1,0 +1,9 @@
+/usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o: in function `GroundRemovalNode::pointCloudCallback(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >)':
+ground_removal_node.cpp:(.text._ZN17GroundRemovalNode18pointCloudCallbackESt10shared_ptrIN11sensor_msgs3msg12PointCloud2_ISaIvEEEE[_ZN17GroundRemovalNode18pointCloudCallbackESt10shared_ptrIN11sensor_msgs3msg12PointCloud2_ISaIvEEEE]+0x226): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::segment(pcl::PointIndices&, pcl::ModelCoefficients&)'
+/usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o:(.data.rel.ro._ZTVN3pcl15SACSegmentationINS_8PointXYZEEE[_ZTVN3pcl15SACSegmentationINS_8PointXYZEEE]+0x48): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::segment(pcl::PointIndices&, pcl::ModelCoefficients&)'
+/usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o:(.data.rel.ro._ZTVN3pcl15SACSegmentationINS_8PointXYZEEE[_ZTVN3pcl15SACSegmentationINS_8PointXYZEEE]+0x50): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::initSACModel(int)'
+/usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o:(.data.rel.ro._ZTVN3pcl15SACSegmentationINS_8PointXYZEEE[_ZTVN3pcl15SACSegmentationINS_8PointXYZEEE]+0x58): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::initSAC(int)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/ground_removal_node.dir/build.make:338: ground_removal_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ground_removal_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

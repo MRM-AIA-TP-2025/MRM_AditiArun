@@ -1,0 +1,12 @@
+[0.032s] Invoking command in '/home/aditi/ERC/build/pcl_ground_removal': /usr/bin/cmake --build /home/aditi/ERC/build/pcl_ground_removal -- -j8 -l8
+[0.209s] [ 50%] [32m[1mLinking CXX executable ground_removal_node[0m
+[2.885s] /usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o: in function `GroundRemovalNode::pointCloudCallback(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >)':
+[2.886s] ground_removal_node.cpp:(.text._ZN17GroundRemovalNode18pointCloudCallbackESt10shared_ptrIN11sensor_msgs3msg12PointCloud2_ISaIvEEEE[_ZN17GroundRemovalNode18pointCloudCallbackESt10shared_ptrIN11sensor_msgs3msg12PointCloud2_ISaIvEEEE]+0x226): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::segment(pcl::PointIndices&, pcl::ModelCoefficients&)'
+[2.909s] /usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o:(.data.rel.ro._ZTVN3pcl15SACSegmentationINS_8PointXYZEEE[_ZTVN3pcl15SACSegmentationINS_8PointXYZEEE]+0x48): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::segment(pcl::PointIndices&, pcl::ModelCoefficients&)'
+[2.910s] /usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o:(.data.rel.ro._ZTVN3pcl15SACSegmentationINS_8PointXYZEEE[_ZTVN3pcl15SACSegmentationINS_8PointXYZEEE]+0x50): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::initSACModel(int)'
+[2.912s] /usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o:(.data.rel.ro._ZTVN3pcl15SACSegmentationINS_8PointXYZEEE[_ZTVN3pcl15SACSegmentationINS_8PointXYZEEE]+0x58): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::initSAC(int)'
+[3.069s] collect2: error: ld returned 1 exit status
+[3.069s] gmake[2]: *** [CMakeFiles/ground_removal_node.dir/build.make:338: ground_removal_node] Error 1
+[3.069s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ground_removal_node.dir/all] Error 2
+[3.069s] gmake: *** [Makefile:146: all] Error 2
+[3.073s] Invoked command in '/home/aditi/ERC/build/pcl_ground_removal' returned '2': /usr/bin/cmake --build /home/aditi/ERC/build/pcl_ground_removal -- -j8 -l8

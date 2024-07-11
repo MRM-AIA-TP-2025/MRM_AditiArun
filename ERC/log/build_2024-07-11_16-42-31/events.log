@@ -1,0 +1,438 @@
+[0.000000] (-) TimerEvent: {}
+[0.000185] (-) JobUnselected: {'identifier': 'leo_nodes'}
+[0.000211] (-) JobUnselected: {'identifier': 'leo_rover'}
+[0.000230] (-) JobUnselected: {'identifier': 'leo_worlds'}
+[0.000251] (pcl_ground_removal) JobQueued: {'identifier': 'pcl_ground_removal', 'dependencies': OrderedDict()}
+[0.000269] (pcl_ground_removal) JobStarted: {'identifier': 'pcl_ground_removal'}
+[0.007180] (pcl_ground_removal) JobProgress: {'identifier': 'pcl_ground_removal', 'progress': 'cmake'}
+[0.007486] (pcl_ground_removal) Command: {'cmd': ['/usr/bin/cmake', '/home/aditi/ERC/pcl_ground_removal', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/aditi/ERC/install/pcl_ground_removal'], 'cwd': '/home/aditi/ERC/build/pcl_ground_removal', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'aditi'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aditi'), ('OLDPWD', '/home/aditi/ERC/pcl_ground_removal'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1587'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aditi/ERC/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aditi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aditi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/aditi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/aditi-ThinkPad-T480s:@/tmp/.ICE-unix/1556,unix/aditi-ThinkPad-T480s:/tmp/.ICE-unix/1556'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0387970a_d726_4680_bc98_a8632d81f3d1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.J39IQ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_rover:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aditi/ERC/build/pcl_ground_removal'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages:/home/aditi/ERC/install/leo_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/aditi/ERC/install/leo_rover')]), 'shell': False}
+[0.062882] (pcl_ground_removal) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099188] (-) TimerEvent: {}
+[0.118990] (pcl_ground_removal) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.126022] (pcl_ground_removal) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.198830] (pcl_ground_removal) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.199281] (-) TimerEvent: {}
+[0.206956] (pcl_ground_removal) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.207230] (pcl_ground_removal) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.207649] (pcl_ground_removal) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.210785] (pcl_ground_removal) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.294240] (pcl_ground_removal) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.299397] (-) TimerEvent: {}
+[0.302099] (pcl_ground_removal) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.302379] (pcl_ground_removal) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.302860] (pcl_ground_removal) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.305598] (pcl_ground_removal) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399533] (-) TimerEvent: {}
+[0.458980] (pcl_ground_removal) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.499662] (-) TimerEvent: {}
+[0.549623] (pcl_ground_removal) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.593357] (pcl_ground_removal) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.598538] (pcl_ground_removal) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.599767] (-) TimerEvent: {}
+[0.607120] (pcl_ground_removal) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.620789] (pcl_ground_removal) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.641213] (pcl_ground_removal) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.699919] (-) TimerEvent: {}
+[0.713780] (pcl_ground_removal) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.716497] (pcl_ground_removal) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.800046] (-) TimerEvent: {}
+[0.811343] (pcl_ground_removal) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.841421] (pcl_ground_removal) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.892054] (pcl_ground_removal) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.900154] (-) TimerEvent: {}
+[0.902107] (pcl_ground_removal) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.975540] (pcl_ground_removal) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.976079] (pcl_ground_removal) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.000295] (-) TimerEvent: {}
+[1.055673] (pcl_ground_removal) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.056925] (pcl_ground_removal) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.100424] (-) TimerEvent: {}
+[1.200697] (-) TimerEvent: {}
+[1.228039] (pcl_ground_removal) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.300834] (-) TimerEvent: {}
+[1.369831] (pcl_ground_removal) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.380896] (pcl_ground_removal) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.400968] (-) TimerEvent: {}
+[1.410245] (pcl_ground_removal) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.410387] (pcl_ground_removal) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.444738] (pcl_ground_removal) StdoutLine: {'line': b'-- Found Boost: /usr/include (found suitable version "1.74.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex \n'}
+[1.450437] (pcl_ground_removal) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.452737] (pcl_ground_removal) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[1.455489] (pcl_ground_removal) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.455688] (pcl_ground_removal) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (USB_10)\n'}
+[1.455764] (pcl_ground_removal) StderrLine: {'line': b'  does not match the name of the calling package (OpenNI).  This can lead to\n'}
+[1.455928] (pcl_ground_removal) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.456003] (pcl_ground_removal) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.456066] (pcl_ground_removal) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.456124] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI.cmake:28 (find_package_handle_standard_args)\n'}
+[1.456182] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:179 (find_package)\n'}
+[1.456238] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:322 (find_openni)\n'}
+[1.456294] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.456351] (pcl_ground_removal) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[1.456407] (pcl_ground_removal) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.456462] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m\n'}
+[1.456517] (pcl_ground_removal) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[1.456576] (pcl_ground_removal) StdoutLine: {'line': b'-- OpenNI disabled because libusb-1.0 not found.\n'}
+[1.456634] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to openni will be disabled\x1b[0m\n'}
+[1.460556] (pcl_ground_removal) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.462962] (pcl_ground_removal) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[1.465726] (pcl_ground_removal) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.465842] (pcl_ground_removal) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (USB_10)\n'}
+[1.465927] (pcl_ground_removal) StderrLine: {'line': b'  does not match the name of the calling package (OpenNI2).  This can lead to\n'}
+[1.466278] (pcl_ground_removal) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.466428] (pcl_ground_removal) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.466543] (pcl_ground_removal) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.466649] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI2.cmake:28 (find_package_handle_standard_args)\n'}
+[1.466755] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:193 (find_package)\n'}
+[1.466858] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_openni2)\n'}
+[1.466961] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.467072] (pcl_ground_removal) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[1.467175] (pcl_ground_removal) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.467279] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m\n'}
+[1.467394] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to openni2 will be disabled\x1b[0m\n'}
+[1.467494] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[1.467594] (pcl_ground_removal) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[1.467698] (pcl_ground_removal) StdoutLine: {'line': b'-- OpenNI 2 disabled because libusb-1.0 not found.\n'}
+[1.467800] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to png will be disabled\x1b[0m\n'}
+[1.490825] (pcl_ground_removal) StdoutLine: {'line': b'-- The imported target "vtkParseOGLExt" references the file\n'}
+[1.490932] (pcl_ground_removal) StdoutLine: {'line': b'   "/usr/bin/vtkParseOGLExt-7.1"\n'}
+[1.491210] (pcl_ground_removal) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.491293] (pcl_ground_removal) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.491354] (pcl_ground_removal) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.491410] (pcl_ground_removal) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.491465] (pcl_ground_removal) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.491520] (pcl_ground_removal) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.491573] (pcl_ground_removal) StdoutLine: {'line': b'\n'}
+[1.491627] (pcl_ground_removal) StdoutLine: {'line': b'-- The imported target "vtkRenderingPythonTkWidgets" references the file\n'}
+[1.491681] (pcl_ground_removal) StdoutLine: {'line': b'   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"\n'}
+[1.491735] (pcl_ground_removal) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.491789] (pcl_ground_removal) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.491842] (pcl_ground_removal) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.491896] (pcl_ground_removal) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.491948] (pcl_ground_removal) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.492001] (pcl_ground_removal) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.492053] (pcl_ground_removal) StdoutLine: {'line': b'\n'}
+[1.492105] (pcl_ground_removal) StdoutLine: {'line': b'-- The imported target "vtk" references the file\n'}
+[1.492167] (pcl_ground_removal) StdoutLine: {'line': b'   "/usr/bin/vtk"\n'}
+[1.492221] (pcl_ground_removal) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.492276] (pcl_ground_removal) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.492331] (pcl_ground_removal) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.492384] (pcl_ground_removal) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.492438] (pcl_ground_removal) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.492491] (pcl_ground_removal) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.492544] (pcl_ground_removal) StdoutLine: {'line': b'\n'}
+[1.492596] (pcl_ground_removal) StdoutLine: {'line': b'-- The imported target "pvtk" references the file\n'}
+[1.492649] (pcl_ground_removal) StdoutLine: {'line': b'   "/usr/bin/pvtk"\n'}
+[1.492702] (pcl_ground_removal) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.492756] (pcl_ground_removal) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.492820] (pcl_ground_removal) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.492882] (pcl_ground_removal) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.492950] (pcl_ground_removal) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.493010] (pcl_ground_removal) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.493070] (pcl_ground_removal) StdoutLine: {'line': b'\n'}
+[1.501078] (-) TimerEvent: {}
+[1.502224] (pcl_ground_removal) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.502410] (pcl_ground_removal) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (libusb-1.0)\n'}
+[1.502482] (pcl_ground_removal) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.502542] (pcl_ground_removal) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.502599] (pcl_ground_removal) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.502655] (pcl_ground_removal) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.502709] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:291 (find_package_handle_standard_args)\n'}
+[1.502764] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:338 (find_libusb)\n'}
+[1.502818] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)\n'}
+[1.502872] (pcl_ground_removal) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[1.502935] (pcl_ground_removal) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.502990] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m\n'}
+[1.503044] (pcl_ground_removal) StdoutLine: {'line': b'-- LIBUSB_1_LIBRARY (missing: LIBUSB_1_INCLUDE_DIR) \n'}
+[1.503102] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to libusb-1.0 will be disabled\x1b[0m\n'}
+[1.519289] (pcl_ground_removal) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.531588] (pcl_ground_removal) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.566523] (pcl_ground_removal) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.567651] (pcl_ground_removal) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[1.568517] (pcl_ground_removal) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.568669] (pcl_ground_removal) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_COMMON)\n'}
+[1.568818] (pcl_ground_removal) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.568943] (pcl_ground_removal) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.569080] (pcl_ground_removal) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.569175] (pcl_ground_removal) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.569284] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.569374] (pcl_ground_removal) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[1.569468] (pcl_ground_removal) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.569567] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m\n'}
+[1.569657] (pcl_ground_removal) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[1.569751] (pcl_ground_removal) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[1.570287] (pcl_ground_removal) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.570455] (pcl_ground_removal) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_OCTREE)\n'}
+[1.570578] (pcl_ground_removal) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.570703] (pcl_ground_removal) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.570824] (pcl_ground_removal) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.570926] (pcl_ground_removal) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.571052] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.571149] (pcl_ground_removal) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[1.571240] (pcl_ground_removal) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.571339] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m\n'}
+[1.571436] (pcl_ground_removal) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[1.571532] (pcl_ground_removal) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[1.572196] (pcl_ground_removal) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.572355] (pcl_ground_removal) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_IO)\n'}
+[1.572502] (pcl_ground_removal) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.572616] (pcl_ground_removal) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.572730] (pcl_ground_removal) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.572846] (pcl_ground_removal) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.572974] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.573065] (pcl_ground_removal) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[1.573156] (pcl_ground_removal) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.573243] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m\n'}
+[1.573341] (pcl_ground_removal) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[1.573437] (pcl_ground_removal) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[1.574202] (pcl_ground_removal) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.574340] (pcl_ground_removal) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_KDTREE)\n'}
+[1.574499] (pcl_ground_removal) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.574612] (pcl_ground_removal) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.574744] (pcl_ground_removal) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.574853] (pcl_ground_removal) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.574946] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.575037] (pcl_ground_removal) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[1.575129] (pcl_ground_removal) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.575217] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m\n'}
+[1.575316] (pcl_ground_removal) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[1.575414] (pcl_ground_removal) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[1.576244] (pcl_ground_removal) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.576375] (pcl_ground_removal) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PCL_SEARCH)\n'}
+[1.576526] (pcl_ground_removal) StderrLine: {'line': b'  does not match the name of the calling package (PCL).  This can lead to\n'}
+[1.576641] (pcl_ground_removal) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.576756] (pcl_ground_removal) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.576905] (pcl_ground_removal) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.577000] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.577095] (pcl_ground_removal) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[1.577185] (pcl_ground_removal) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.577273] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m\n'}
+[1.577374] (pcl_ground_removal) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[1.577469] (pcl_ground_removal) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[1.578234] (pcl_ground_removal) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.578365] (pcl_ground_removal) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.578525] (pcl_ground_removal) StderrLine: {'line': b'  (PCL_SAMPLE_CONSENSUS) does not match the name of the calling package\n'}
+[1.578639] (pcl_ground_removal) StderrLine: {'line': b'  (PCL).  This can lead to problems in calling code that expects\n'}
+[1.578782] (pcl_ground_removal) StderrLine: {'line': b'  `find_package` result variables (e.g., `_FOUND`) to follow a certain\n'}
+[1.578892] (pcl_ground_removal) StderrLine: {'line': b'  pattern.\n'}
+[1.578984] (pcl_ground_removal) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.579072] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.579165] (pcl_ground_removal) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[1.579253] (pcl_ground_removal) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.579350] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m\n'}
+[1.579450] (pcl_ground_removal) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[1.579543] (pcl_ground_removal) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[1.580191] (pcl_ground_removal) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.580320] (pcl_ground_removal) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args`\n'}
+[1.580439] (pcl_ground_removal) StderrLine: {'line': b'  (PCL_FILTERS) does not match the name of the calling package (PCL).  This\n'}
+[1.580553] (pcl_ground_removal) StderrLine: {'line': b'  can lead to problems in calling code that expects `find_package` result\n'}
+[1.580704] (pcl_ground_removal) StderrLine: {'line': b'  variables (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.580813] (pcl_ground_removal) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.580920] (pcl_ground_removal) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)\n'}
+[1.581027] (pcl_ground_removal) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[1.581134] (pcl_ground_removal) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.581246] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m\n'}
+[1.581409] (pcl_ground_removal) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[1.581526] (pcl_ground_removal) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_octree;pcl_io;pcl_kdtree;pcl_search;pcl_sample_consensus;pcl_filters;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;FLANN::FLANN  \n'}
+[1.583673] (pcl_ground_removal) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[1.601158] (-) TimerEvent: {}
+[1.701395] (-) TimerEvent: {}
+[1.801677] (-) TimerEvent: {}
+[1.805842] (pcl_ground_removal) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.889648] (pcl_ground_removal) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.900057] (pcl_ground_removal) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.900652] (pcl_ground_removal) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.900792] (pcl_ground_removal) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.901743] (-) TimerEvent: {}
+[1.902385] (pcl_ground_removal) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.905082] (pcl_ground_removal) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.906666] (pcl_ground_removal) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.916223] (pcl_ground_removal) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.916367] (pcl_ground_removal) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.917865] (pcl_ground_removal) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.919035] (pcl_ground_removal) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.952254] (pcl_ground_removal) StdoutLine: {'line': b'-- Generating done\n'}
+[1.953393] (pcl_ground_removal) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[1.953520] (pcl_ground_removal) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[1.953624] (pcl_ground_removal) StderrLine: {'line': b'\n'}
+[1.953727] (pcl_ground_removal) StderrLine: {'line': b'    CATKIN_INSTALL_INTO_PREFIX_ROOT\n'}
+[1.953815] (pcl_ground_removal) StderrLine: {'line': b'\n'}
+[1.953908] (pcl_ground_removal) StderrLine: {'line': b'\x1b[0m\n'}
+[1.954206] (pcl_ground_removal) StdoutLine: {'line': b'-- Build files have been written to: /home/aditi/ERC/build/pcl_ground_removal\n'}
+[1.966967] (pcl_ground_removal) CommandEnded: {'returncode': 0}
+[1.967623] (pcl_ground_removal) JobProgress: {'identifier': 'pcl_ground_removal', 'progress': 'build'}
+[1.969059] (pcl_ground_removal) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aditi/ERC/build/pcl_ground_removal', '--', '-j8', '-l8'], 'cwd': '/home/aditi/ERC/build/pcl_ground_removal', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'aditi'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aditi'), ('OLDPWD', '/home/aditi/ERC/pcl_ground_removal'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1587'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aditi/ERC/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aditi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aditi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/aditi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/aditi-ThinkPad-T480s:@/tmp/.ICE-unix/1556,unix/aditi-ThinkPad-T480s:/tmp/.ICE-unix/1556'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0387970a_d726_4680_bc98_a8632d81f3d1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.J39IQ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_rover:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aditi/ERC/build/pcl_ground_removal'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages:/home/aditi/ERC/install/leo_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/aditi/ERC/install/leo_rover')]), 'shell': False}
+[2.001890] (-) TimerEvent: {}
+[2.027152] (pcl_ground_removal) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o\x1b[0m\n'}
+[2.102027] (-) TimerEvent: {}
+[2.202308] (-) TimerEvent: {}
+[2.302561] (-) TimerEvent: {}
+[2.402845] (-) TimerEvent: {}
+[2.503136] (-) TimerEvent: {}
+[2.603435] (-) TimerEvent: {}
+[2.703717] (-) TimerEvent: {}
+[2.804008] (-) TimerEvent: {}
+[2.904297] (-) TimerEvent: {}
+[3.004584] (-) TimerEvent: {}
+[3.104874] (-) TimerEvent: {}
+[3.205158] (-) TimerEvent: {}
+[3.305443] (-) TimerEvent: {}
+[3.405728] (-) TimerEvent: {}
+[3.506015] (-) TimerEvent: {}
+[3.606302] (-) TimerEvent: {}
+[3.706557] (-) TimerEvent: {}
+[3.806860] (-) TimerEvent: {}
+[3.907158] (-) TimerEvent: {}
+[4.007445] (-) TimerEvent: {}
+[4.107746] (-) TimerEvent: {}
+[4.208046] (-) TimerEvent: {}
+[4.308352] (-) TimerEvent: {}
+[4.408668] (-) TimerEvent: {}
+[4.508975] (-) TimerEvent: {}
+[4.609274] (-) TimerEvent: {}
+[4.709558] (-) TimerEvent: {}
+[4.809865] (-) TimerEvent: {}
+[4.910162] (-) TimerEvent: {}
+[5.010464] (-) TimerEvent: {}
+[5.110786] (-) TimerEvent: {}
+[5.211093] (-) TimerEvent: {}
+[5.311411] (-) TimerEvent: {}
+[5.411741] (-) TimerEvent: {}
+[5.512063] (-) TimerEvent: {}
+[5.612369] (-) TimerEvent: {}
+[5.712685] (-) TimerEvent: {}
+[5.812996] (-) TimerEvent: {}
+[5.913300] (-) TimerEvent: {}
+[6.013600] (-) TimerEvent: {}
+[6.113910] (-) TimerEvent: {}
+[6.214190] (-) TimerEvent: {}
+[6.314520] (-) TimerEvent: {}
+[6.414846] (-) TimerEvent: {}
+[6.515187] (-) TimerEvent: {}
+[6.615521] (-) TimerEvent: {}
+[6.715833] (-) TimerEvent: {}
+[6.816141] (-) TimerEvent: {}
+[6.916443] (-) TimerEvent: {}
+[7.016742] (-) TimerEvent: {}
+[7.117047] (-) TimerEvent: {}
+[7.217344] (-) TimerEvent: {}
+[7.317648] (-) TimerEvent: {}
+[7.417954] (-) TimerEvent: {}
+[7.518261] (-) TimerEvent: {}
+[7.618501] (-) TimerEvent: {}
+[7.718804] (-) TimerEvent: {}
+[7.819117] (-) TimerEvent: {}
+[7.919412] (-) TimerEvent: {}
+[8.019699] (-) TimerEvent: {}
+[8.120003] (-) TimerEvent: {}
+[8.220309] (-) TimerEvent: {}
+[8.320608] (-) TimerEvent: {}
+[8.420911] (-) TimerEvent: {}
+[8.521213] (-) TimerEvent: {}
+[8.621507] (-) TimerEvent: {}
+[8.721805] (-) TimerEvent: {}
+[8.822109] (-) TimerEvent: {}
+[8.922412] (-) TimerEvent: {}
+[9.022739] (-) TimerEvent: {}
+[9.123058] (-) TimerEvent: {}
+[9.223371] (-) TimerEvent: {}
+[9.323682] (-) TimerEvent: {}
+[9.423991] (-) TimerEvent: {}
+[9.524296] (-) TimerEvent: {}
+[9.624599] (-) TimerEvent: {}
+[9.724906] (-) TimerEvent: {}
+[9.825216] (-) TimerEvent: {}
+[9.925535] (-) TimerEvent: {}
+[10.025851] (-) TimerEvent: {}
+[10.126160] (-) TimerEvent: {}
+[10.226465] (-) TimerEvent: {}
+[10.326776] (-) TimerEvent: {}
+[10.427095] (-) TimerEvent: {}
+[10.527496] (-) TimerEvent: {}
+[10.627889] (-) TimerEvent: {}
+[10.728227] (-) TimerEvent: {}
+[10.828571] (-) TimerEvent: {}
+[10.928891] (-) TimerEvent: {}
+[11.029334] (-) TimerEvent: {}
+[11.129724] (-) TimerEvent: {}
+[11.230071] (-) TimerEvent: {}
+[11.330385] (-) TimerEvent: {}
+[11.430676] (-) TimerEvent: {}
+[11.530985] (-) TimerEvent: {}
+[11.631294] (-) TimerEvent: {}
+[11.731602] (-) TimerEvent: {}
+[11.831938] (-) TimerEvent: {}
+[11.932246] (-) TimerEvent: {}
+[12.032516] (-) TimerEvent: {}
+[12.132812] (-) TimerEvent: {}
+[12.233153] (-) TimerEvent: {}
+[12.333532] (-) TimerEvent: {}
+[12.433852] (-) TimerEvent: {}
+[12.534164] (-) TimerEvent: {}
+[12.634488] (-) TimerEvent: {}
+[12.734806] (-) TimerEvent: {}
+[12.835143] (-) TimerEvent: {}
+[12.935483] (-) TimerEvent: {}
+[13.035835] (-) TimerEvent: {}
+[13.136188] (-) TimerEvent: {}
+[13.236500] (-) TimerEvent: {}
+[13.336785] (-) TimerEvent: {}
+[13.437065] (-) TimerEvent: {}
+[13.537346] (-) TimerEvent: {}
+[13.637621] (-) TimerEvent: {}
+[13.737904] (-) TimerEvent: {}
+[13.838183] (-) TimerEvent: {}
+[13.938465] (-) TimerEvent: {}
+[14.038742] (-) TimerEvent: {}
+[14.139022] (-) TimerEvent: {}
+[14.239302] (-) TimerEvent: {}
+[14.339611] (-) TimerEvent: {}
+[14.439891] (-) TimerEvent: {}
+[14.540179] (-) TimerEvent: {}
+[14.640461] (-) TimerEvent: {}
+[14.740738] (-) TimerEvent: {}
+[14.841032] (-) TimerEvent: {}
+[14.941311] (-) TimerEvent: {}
+[15.041594] (-) TimerEvent: {}
+[15.141881] (-) TimerEvent: {}
+[15.242164] (-) TimerEvent: {}
+[15.342452] (-) TimerEvent: {}
+[15.442739] (-) TimerEvent: {}
+[15.543046] (-) TimerEvent: {}
+[15.643300] (-) TimerEvent: {}
+[15.743596] (-) TimerEvent: {}
+[15.843987] (-) TimerEvent: {}
+[15.944243] (-) TimerEvent: {}
+[16.044531] (-) TimerEvent: {}
+[16.144840] (-) TimerEvent: {}
+[16.245129] (-) TimerEvent: {}
+[16.345424] (-) TimerEvent: {}
+[16.445719] (-) TimerEvent: {}
+[16.546043] (-) TimerEvent: {}
+[16.646377] (-) TimerEvent: {}
+[16.670254] (pcl_ground_removal) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ground_removal_node\x1b[0m\n'}
+[16.746485] (-) TimerEvent: {}
+[16.846776] (-) TimerEvent: {}
+[16.947088] (-) TimerEvent: {}
+[17.047423] (-) TimerEvent: {}
+[17.147772] (-) TimerEvent: {}
+[17.248094] (-) TimerEvent: {}
+[17.348466] (-) TimerEvent: {}
+[17.448814] (-) TimerEvent: {}
+[17.549140] (-) TimerEvent: {}
+[17.649469] (-) TimerEvent: {}
+[17.749786] (-) TimerEvent: {}
+[17.850093] (-) TimerEvent: {}
+[17.882339] (pcl_ground_removal) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o: in function `GroundRemovalNode::pointCloudCallback(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >)':\n"}
+[17.882564] (pcl_ground_removal) StderrLine: {'line': b"ground_removal_node.cpp:(.text._ZN17GroundRemovalNode18pointCloudCallbackESt10shared_ptrIN11sensor_msgs3msg12PointCloud2_ISaIvEEEE[_ZN17GroundRemovalNode18pointCloudCallbackESt10shared_ptrIN11sensor_msgs3msg12PointCloud2_ISaIvEEEE]+0x226): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::segment(pcl::PointIndices&, pcl::ModelCoefficients&)'\n"}
+[17.898834] (pcl_ground_removal) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o:(.data.rel.ro._ZTVN3pcl15SACSegmentationINS_8PointXYZEEE[_ZTVN3pcl15SACSegmentationINS_8PointXYZEEE]+0x48): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::segment(pcl::PointIndices&, pcl::ModelCoefficients&)'\n"}
+[17.899778] (pcl_ground_removal) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o:(.data.rel.ro._ZTVN3pcl15SACSegmentationINS_8PointXYZEEE[_ZTVN3pcl15SACSegmentationINS_8PointXYZEEE]+0x50): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::initSACModel(int)'\n"}
+[17.900482] (pcl_ground_removal) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o:(.data.rel.ro._ZTVN3pcl15SACSegmentationINS_8PointXYZEEE[_ZTVN3pcl15SACSegmentationINS_8PointXYZEEE]+0x58): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::initSAC(int)'\n"}
+[17.950227] (-) TimerEvent: {}
+[17.966134] (pcl_ground_removal) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[17.968071] (pcl_ground_removal) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ground_removal_node.dir/build.make:338: ground_removal_node] Error 1\n'}
+[17.968363] (pcl_ground_removal) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ground_removal_node.dir/all] Error 2\n'}
+[17.968699] (pcl_ground_removal) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[17.971379] (pcl_ground_removal) CommandEnded: {'returncode': 2}
+[18.020938] (pcl_ground_removal) JobEnded: {'identifier': 'pcl_ground_removal', 'rc': 2}
+[18.021959] (-) EventReactorShutdown: {}

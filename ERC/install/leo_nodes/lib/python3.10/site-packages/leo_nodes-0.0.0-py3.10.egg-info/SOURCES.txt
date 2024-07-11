@@ -13,6 +13,7 @@ leo_nodes/cmd_vel_relay.py
 leo_nodes/ground_truth_filter.py
 leo_nodes/odom_compat_node.py
 leo_nodes/pdu_node.py
+leo_nodes/simple_transform_node.py
 leo_nodes/zed2_imu_transform_broadcaster.py
 leo_nodes/zed2_imu_transform_publisher.py
 resource/leo_nodes

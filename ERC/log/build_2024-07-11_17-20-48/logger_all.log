@@ -1,0 +1,289 @@
+[0.116s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.116s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7c396e23ec50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7c396e23e5c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7c396e23e5c0>>, mixin_verb=('build',))
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.315s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/aditi/ERC'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(leo_nodes) by extensions ['ignore', 'ignore_ament_install']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(leo_nodes) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(leo_nodes) by extension 'ignore_ament_install'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(leo_nodes) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(leo_nodes) by extension 'colcon_pkg'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(leo_nodes) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(leo_nodes) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(leo_nodes) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(leo_nodes) by extension 'ros'
+[0.335s] DEBUG:colcon.colcon_core.package_identification:Package 'leo_nodes' with type 'ros.ament_python' and name 'leo_nodes'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(leo_rover) by extensions ['ignore', 'ignore_ament_install']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(leo_rover) by extension 'ignore'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(leo_rover) by extension 'ignore_ament_install'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(leo_rover) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(leo_rover) by extension 'colcon_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(leo_rover) by extensions ['colcon_meta']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(leo_rover) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(leo_rover) by extensions ['ros']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(leo_rover) by extension 'ros'
+[0.336s] DEBUG:colcon.colcon_core.package_identification:Package 'leo_rover' with type 'ros.ament_cmake' and name 'leo_rover'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(leo_worlds) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(leo_worlds) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(leo_worlds) by extension 'ignore_ament_install'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(leo_worlds) by extensions ['colcon_pkg']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(leo_worlds) by extension 'colcon_pkg'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(leo_worlds) by extensions ['colcon_meta']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(leo_worlds) by extension 'colcon_meta'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(leo_worlds) by extensions ['ros']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(leo_worlds) by extension 'ros'
+[0.337s] DEBUG:colcon.colcon_core.package_identification:Package 'leo_worlds' with type 'ros.ament_python' and name 'leo_worlds'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(pcl_ground_removal) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(pcl_ground_removal) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(pcl_ground_removal) by extension 'ignore_ament_install'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(pcl_ground_removal) by extensions ['colcon_pkg']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(pcl_ground_removal) by extension 'colcon_pkg'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(pcl_ground_removal) by extensions ['colcon_meta']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(pcl_ground_removal) by extension 'colcon_meta'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(pcl_ground_removal) by extensions ['ros']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(pcl_ground_removal) by extension 'ros'
+[0.338s] DEBUG:colcon.colcon_core.package_identification:Package 'pcl_ground_removal' with type 'ros.ament_cmake' and name 'pcl_ground_removal'
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.367s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.367s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.369s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/aditi/ERC/install
+[0.371s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 359 installed packages in /opt/ros/humble
+[0.373s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'leo_nodes' build argument 'cmake_args' from command line to 'None'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'leo_nodes' build argument 'cmake_target' from command line to 'None'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'leo_nodes' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'leo_nodes' build argument 'cmake_clean_cache' from command line to 'False'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'leo_nodes' build argument 'cmake_clean_first' from command line to 'False'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'leo_nodes' build argument 'cmake_force_configure' from command line to 'False'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'leo_nodes' build argument 'ament_cmake_args' from command line to 'None'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'leo_nodes' build argument 'catkin_cmake_args' from command line to 'None'
+[0.417s] Level 5:colcon.colcon_core.verb:set package 'leo_nodes' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.417s] DEBUG:colcon.colcon_core.verb:Building package 'leo_nodes' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aditi/ERC/build/leo_nodes', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aditi/ERC/install/leo_nodes', 'merge_install': False, 'path': '/home/aditi/ERC/leo_nodes', 'symlink_install': False, 'test_result_base': None}
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_rover' build argument 'cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_rover' build argument 'cmake_target' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_rover' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_rover' build argument 'cmake_clean_cache' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_rover' build argument 'cmake_clean_first' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_rover' build argument 'cmake_force_configure' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_rover' build argument 'ament_cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_rover' build argument 'catkin_cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_rover' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.418s] DEBUG:colcon.colcon_core.verb:Building package 'leo_rover' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aditi/ERC/build/leo_rover', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aditi/ERC/install/leo_rover', 'merge_install': False, 'path': '/home/aditi/ERC/leo_rover', 'symlink_install': False, 'test_result_base': None}
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_worlds' build argument 'cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_worlds' build argument 'cmake_target' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_worlds' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_worlds' build argument 'cmake_clean_cache' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_worlds' build argument 'cmake_clean_first' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'leo_worlds' build argument 'cmake_force_configure' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'leo_worlds' build argument 'ament_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'leo_worlds' build argument 'catkin_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'leo_worlds' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.419s] DEBUG:colcon.colcon_core.verb:Building package 'leo_worlds' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aditi/ERC/build/leo_worlds', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aditi/ERC/install/leo_worlds', 'merge_install': False, 'path': '/home/aditi/ERC/leo_worlds', 'symlink_install': False, 'test_result_base': None}
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'pcl_ground_removal' build argument 'cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'pcl_ground_removal' build argument 'cmake_target' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'pcl_ground_removal' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'pcl_ground_removal' build argument 'cmake_clean_cache' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'pcl_ground_removal' build argument 'cmake_clean_first' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'pcl_ground_removal' build argument 'cmake_force_configure' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'pcl_ground_removal' build argument 'ament_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'pcl_ground_removal' build argument 'catkin_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'pcl_ground_removal' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.419s] DEBUG:colcon.colcon_core.verb:Building package 'pcl_ground_removal' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aditi/ERC/build/pcl_ground_removal', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aditi/ERC/install/pcl_ground_removal', 'merge_install': False, 'path': '/home/aditi/ERC/pcl_ground_removal', 'symlink_install': False, 'test_result_base': None}
+[0.419s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.420s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.420s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/aditi/ERC/leo_nodes' with build type 'ament_python'
+[0.421s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_nodes', 'ament_prefix_path')
+[0.423s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/leo_nodes/share/leo_nodes/hook/ament_prefix_path.ps1'
+[0.423s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aditi/ERC/install/leo_nodes/share/leo_nodes/hook/ament_prefix_path.dsv'
+[0.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/leo_nodes/share/leo_nodes/hook/ament_prefix_path.sh'
+[0.424s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.424s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.428s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aditi/ERC/leo_rover' with build type 'ament_cmake'
+[0.428s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aditi/ERC/leo_rover'
+[0.428s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.428s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.431s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/aditi/ERC/leo_worlds' with build type 'ament_python'
+[0.431s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_worlds', 'ament_prefix_path')
+[0.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/leo_worlds/share/leo_worlds/hook/ament_prefix_path.ps1'
+[0.432s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aditi/ERC/install/leo_worlds/share/leo_worlds/hook/ament_prefix_path.dsv'
+[0.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/leo_worlds/share/leo_worlds/hook/ament_prefix_path.sh'
+[0.433s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.433s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.436s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aditi/ERC/pcl_ground_removal' with build type 'ament_cmake'
+[0.436s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aditi/ERC/pcl_ground_removal'
+[0.436s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.436s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.713s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/aditi/ERC/leo_nodes'
+[0.713s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.714s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aditi/ERC/build/leo_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --build /home/aditi/ERC/build/leo_rover -- -j8 -l8
+[0.995s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/aditi/ERC/leo_worlds'
+[0.996s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.996s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.007s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aditi/ERC/build/pcl_ground_removal': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --build /home/aditi/ERC/build/pcl_ground_removal -- -j8 -l8
+[1.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aditi/ERC/build/leo_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --build /home/aditi/ERC/build/leo_rover -- -j8 -l8
+[1.038s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aditi/ERC/build/leo_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --install /home/aditi/ERC/build/leo_rover
+[1.048s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leo_rover)
+[1.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aditi/ERC/build/leo_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --install /home/aditi/ERC/build/leo_rover
+[1.052s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_rover' for CMake module files
+[1.053s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_rover' for CMake config files
+[1.053s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_rover', 'cmake_prefix_path')
+[1.054s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/leo_rover/share/leo_rover/hook/cmake_prefix_path.ps1'
+[1.054s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aditi/ERC/install/leo_rover/share/leo_rover/hook/cmake_prefix_path.dsv'
+[1.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/leo_rover/share/leo_rover/hook/cmake_prefix_path.sh'
+[1.056s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_rover/bin'
+[1.056s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_rover/lib/pkgconfig/leo_rover.pc'
+[1.056s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_rover/lib/python3.10/site-packages'
+[1.057s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_rover/bin'
+[1.057s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_rover/share/leo_rover/package.ps1'
+[1.059s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aditi/ERC/install/leo_rover/share/leo_rover/package.dsv'
+[1.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_rover/share/leo_rover/package.sh'
+[1.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_rover/share/leo_rover/package.bash'
+[1.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_rover/share/leo_rover/package.zsh'
+[1.063s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aditi/ERC/install/leo_rover/share/colcon-core/packages/leo_rover)
+[1.085s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leo_rover)
+[1.085s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_rover' for CMake module files
+[1.086s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_rover' for CMake config files
+[1.086s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_rover', 'cmake_prefix_path')
+[1.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/leo_rover/share/leo_rover/hook/cmake_prefix_path.ps1'
+[1.087s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aditi/ERC/install/leo_rover/share/leo_rover/hook/cmake_prefix_path.dsv'
+[1.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/leo_rover/share/leo_rover/hook/cmake_prefix_path.sh'
+[1.088s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_rover/bin'
+[1.088s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_rover/lib/pkgconfig/leo_rover.pc'
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_rover/lib/python3.10/site-packages'
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_rover/bin'
+[1.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_rover/share/leo_rover/package.ps1'
+[1.090s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aditi/ERC/install/leo_rover/share/leo_rover/package.dsv'
+[1.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_rover/share/leo_rover/package.sh'
+[1.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_rover/share/leo_rover/package.bash'
+[1.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_rover/share/leo_rover/package.zsh'
+[1.092s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aditi/ERC/install/leo_rover/share/colcon-core/packages/leo_rover)
+[1.112s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aditi/ERC/build/pcl_ground_removal' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --build /home/aditi/ERC/build/pcl_ground_removal -- -j8 -l8
+[1.139s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aditi/ERC/build/pcl_ground_removal': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --install /home/aditi/ERC/build/pcl_ground_removal
+[1.150s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pcl_ground_removal)
+[1.150s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/pcl_ground_removal' for CMake module files
+[1.151s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aditi/ERC/build/pcl_ground_removal' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble /usr/bin/cmake --install /home/aditi/ERC/build/pcl_ground_removal
+[1.152s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/pcl_ground_removal' for CMake config files
+[1.152s] Level 1:colcon.colcon_core.shell:create_environment_hook('pcl_ground_removal', 'cmake_prefix_path')
+[1.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/hook/cmake_prefix_path.ps1'
+[1.153s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/hook/cmake_prefix_path.dsv'
+[1.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/hook/cmake_prefix_path.sh'
+[1.154s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/pcl_ground_removal/lib'
+[1.154s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/pcl_ground_removal/bin'
+[1.154s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/pcl_ground_removal/lib/pkgconfig/pcl_ground_removal.pc'
+[1.155s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/pcl_ground_removal/lib/python3.10/site-packages'
+[1.155s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/pcl_ground_removal/bin'
+[1.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.ps1'
+[1.156s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.dsv'
+[1.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.sh'
+[1.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.bash'
+[1.158s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.zsh'
+[1.158s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aditi/ERC/install/pcl_ground_removal/share/colcon-core/packages/pcl_ground_removal)
+[1.183s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pcl_ground_removal)
+[1.183s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/pcl_ground_removal' for CMake module files
+[1.184s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/pcl_ground_removal' for CMake config files
+[1.184s] Level 1:colcon.colcon_core.shell:create_environment_hook('pcl_ground_removal', 'cmake_prefix_path')
+[1.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/hook/cmake_prefix_path.ps1'
+[1.185s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/hook/cmake_prefix_path.dsv'
+[1.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/hook/cmake_prefix_path.sh'
+[1.185s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/pcl_ground_removal/lib'
+[1.185s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/pcl_ground_removal/bin'
+[1.186s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/pcl_ground_removal/lib/pkgconfig/pcl_ground_removal.pc'
+[1.186s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/pcl_ground_removal/lib/python3.10/site-packages'
+[1.186s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/pcl_ground_removal/bin'
+[1.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.ps1'
+[1.187s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.dsv'
+[1.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.sh'
+[1.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.bash'
+[1.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.zsh'
+[1.188s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aditi/ERC/install/pcl_ground_removal/share/colcon-core/packages/pcl_ground_removal)
+[1.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aditi/ERC/leo_nodes': PYTHONPATH=/home/aditi/ERC/build/leo_nodes/prefix_override:/home/aditi/ERC/install/leo_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/leo_nodes build --build-base /home/aditi/ERC/build/leo_nodes/build install --record /home/aditi/ERC/build/leo_nodes/install.log --single-version-externally-managed install_data
+[1.443s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aditi/ERC/leo_worlds': PYTHONPATH=/home/aditi/ERC/build/leo_worlds/prefix_override:/home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/leo_worlds build --build-base /home/aditi/ERC/build/leo_worlds/build install --record /home/aditi/ERC/build/leo_worlds/install.log --single-version-externally-managed install_data
+[1.724s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_nodes' for CMake module files
+[1.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aditi/ERC/leo_nodes' returned '0': PYTHONPATH=/home/aditi/ERC/build/leo_nodes/prefix_override:/home/aditi/ERC/install/leo_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/leo_nodes build --build-base /home/aditi/ERC/build/leo_nodes/build install --record /home/aditi/ERC/build/leo_nodes/install.log --single-version-externally-managed install_data
+[1.726s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_nodes' for CMake config files
+[1.726s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_nodes/lib'
+[1.727s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_nodes/bin'
+[1.727s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_nodes/lib/pkgconfig/leo_nodes.pc'
+[1.727s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_nodes/lib/python3.10/site-packages'
+[1.727s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_nodes', 'pythonpath')
+[1.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/leo_nodes/share/leo_nodes/hook/pythonpath.ps1'
+[1.728s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aditi/ERC/install/leo_nodes/share/leo_nodes/hook/pythonpath.dsv'
+[1.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/leo_nodes/share/leo_nodes/hook/pythonpath.sh'
+[1.729s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_nodes/bin'
+[1.729s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leo_nodes)
+[1.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_nodes/share/leo_nodes/package.ps1'
+[1.730s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aditi/ERC/install/leo_nodes/share/leo_nodes/package.dsv'
+[1.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_nodes/share/leo_nodes/package.sh'
+[1.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_nodes/share/leo_nodes/package.bash'
+[1.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_nodes/share/leo_nodes/package.zsh'
+[1.732s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aditi/ERC/install/leo_nodes/share/colcon-core/packages/leo_nodes)
+[1.775s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_worlds' for CMake module files
+[1.776s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aditi/ERC/leo_worlds' returned '0': PYTHONPATH=/home/aditi/ERC/build/leo_worlds/prefix_override:/home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/leo_worlds build --build-base /home/aditi/ERC/build/leo_worlds/build install --record /home/aditi/ERC/build/leo_worlds/install.log --single-version-externally-managed install_data
+[1.776s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_worlds' for CMake config files
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_worlds/lib'
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_worlds/bin'
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_worlds/lib/pkgconfig/leo_worlds.pc'
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages'
+[1.777s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_worlds', 'pythonpath')
+[1.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/leo_worlds/share/leo_worlds/hook/pythonpath.ps1'
+[1.778s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aditi/ERC/install/leo_worlds/share/leo_worlds/hook/pythonpath.dsv'
+[1.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aditi/ERC/install/leo_worlds/share/leo_worlds/hook/pythonpath.sh'
+[1.779s] Level 1:colcon.colcon_core.environment:checking '/home/aditi/ERC/install/leo_worlds/bin'
+[1.779s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leo_worlds)
+[1.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_worlds/share/leo_worlds/package.ps1'
+[1.780s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aditi/ERC/install/leo_worlds/share/leo_worlds/package.dsv'
+[1.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_worlds/share/leo_worlds/package.sh'
+[1.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_worlds/share/leo_worlds/package.bash'
+[1.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/aditi/ERC/install/leo_worlds/share/leo_worlds/package.zsh'
+[1.782s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aditi/ERC/install/leo_worlds/share/colcon-core/packages/leo_worlds)
+[1.782s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.782s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.782s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.782s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.788s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.788s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.788s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.801s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.802s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aditi/ERC/install/local_setup.ps1'
+[1.803s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aditi/ERC/install/_local_setup_util_ps1.py'
+[1.805s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aditi/ERC/install/setup.ps1'
+[1.807s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aditi/ERC/install/local_setup.sh'
+[1.808s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aditi/ERC/install/_local_setup_util_sh.py'
+[1.808s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aditi/ERC/install/setup.sh'
+[1.810s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aditi/ERC/install/local_setup.bash'
+[1.810s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aditi/ERC/install/setup.bash'
+[1.812s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aditi/ERC/install/local_setup.zsh'
+[1.812s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aditi/ERC/install/setup.zsh'

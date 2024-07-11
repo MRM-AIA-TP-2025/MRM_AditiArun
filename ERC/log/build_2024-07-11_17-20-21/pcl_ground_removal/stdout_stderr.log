@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ground_removal_node[0m
+[100%] Built target ground_removal_node
+-- Install configuration: ""
+-- Installing: /home/aditi/ERC/install/pcl_ground_removal/lib/pcl_ground_removal/ground_removal_node
+-- Set runtime path of "/home/aditi/ERC/install/pcl_ground_removal/lib/pcl_ground_removal/ground_removal_node" to ""
+-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/ament_index/resource_index/package_run_dependencies/pcl_ground_removal
+-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/ament_index/resource_index/parent_prefix_path/pcl_ground_removal
+-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/ament_prefix_path.sh
+-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/path.sh
+-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/path.dsv
+-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.bash
+-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.sh
+-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.zsh
+-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.dsv
+-- Installing: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.dsv
+-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/ament_index/resource_index/packages/pcl_ground_removal
+-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/cmake/pcl_ground_removalConfig.cmake
+-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/cmake/pcl_ground_removalConfig-version.cmake
+-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.xml

@@ -1,3 +1,4 @@
+/home/aditi/ERC/install/leo_rover/share/leo_rover/launch/new.launch.xml
 /home/aditi/ERC/install/leo_rover/share/leo_rover/launch/temp.launch.xml
 /home/aditi/ERC/install/leo_rover/share/leo_rover/launch/xmlTest.launch.xml
 /home/aditi/ERC/install/leo_rover/share/ament_index/resource_index/package_run_dependencies/leo_rover

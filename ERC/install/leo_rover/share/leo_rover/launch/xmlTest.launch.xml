@@ -46,15 +46,6 @@
         <param name="params_file" value="/home/aditi/ERC/leo_rover/config/ekf_localization.yaml"/>
     </node>
     
-  <node name="aruco_detect"
-        pkg="aruco_ros"
-        exec="single" output="screen" launch-prefix="gnome-terminal --">
-        <param name="camera_frame" value="camera_link"/>
-        <param name="marker_size" value="0.25"/>
-        <param name="image_is_rectified" value="true"/>
-        <remap from="image" to="/leo_camera/image_raw"/>
-        <remap from="camera_info" to="/leo_camera/camera_info"/>
-    </node>
 
   <node name="rgbd_odometry"
         pkg="rtabmap_odom"
@@ -66,6 +57,25 @@
         <remap from="rgb/camera_info" to="/zed2_left_camera/camera_info"/>
         <remap from="depth/image" to="/zed2_left_camera/depth/image_raw"/>
     </node>
+    
+
+
+
+  <!-- PointCloud to LaserScan node -->
+  <node pkg="pointcloud_to_laserscan" exec="pointcloud_to_laserscan_node" name="pointcloud_to_laserscan">
+    <remap from="cloud_in" to="/zed2_left_camera/points" />
+    <remap from="scan" to="/scann" />
+    <param name="scan_time" value="0.1" />
+    <param name="range_min" value="0.1" />
+    <param name="range_max" value="10.0" />
+    <param name="angle_increment" value="0.01" />
+    <!-- Additional optional parameters -->
+    <param name="transform_tolerance" value="0.01" />
+    <param name="min_height" value="-1.0" />
+    <param name="max_height" value="1.0" />
+  </node>
+
+
 
   <!-- Launch cmd_vel_relay -->
   <node pkg="leo_nodes" exec="cmd_vel_relay" name="cmd_vel_relay" output="screen"/>
@@ -75,6 +85,8 @@
 
   <!-- Launch odom_compat_node -->
   <node pkg="leo_nodes" exec="odom_compat_node" name="odom_compat" output="screen"/>
+  
+ 
 
   <!-- Launch pdu_node -->
   <node pkg="leo_nodes" exec="pdu_node" name="pdu_node" output="screen" launch-prefix="gnome-terminal --">

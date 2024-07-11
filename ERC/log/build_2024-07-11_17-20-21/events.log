@@ -1,0 +1,209 @@
+[0.000000] (-) TimerEvent: {}
+[0.000102] (-) JobUnselected: {'identifier': 'leo_nodes'}
+[0.000149] (-) JobUnselected: {'identifier': 'leo_rover'}
+[0.000168] (-) JobUnselected: {'identifier': 'leo_worlds'}
+[0.000231] (pcl_ground_removal) JobQueued: {'identifier': 'pcl_ground_removal', 'dependencies': OrderedDict()}
+[0.000276] (pcl_ground_removal) JobStarted: {'identifier': 'pcl_ground_removal'}
+[0.007486] (pcl_ground_removal) JobProgress: {'identifier': 'pcl_ground_removal', 'progress': 'cmake'}
+[0.008827] (pcl_ground_removal) JobProgress: {'identifier': 'pcl_ground_removal', 'progress': 'build'}
+[0.008864] (pcl_ground_removal) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aditi/ERC/build/pcl_ground_removal', '--', '-j8', '-l8'], 'cwd': '/home/aditi/ERC/build/pcl_ground_removal', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'aditi'), ('ROS_PACKAGE_PATH', '/home/aditi/ERC/install/pcl_ground_removal/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aditi'), ('OLDPWD', '/home/aditi/ERC'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3875'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aditi/ERC/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aditi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/aditi/ERC/install/pcl_ground_removal/lib/x86_64-linux-gnu/pkgconfig:/home/aditi/ERC/install/pcl_ground_removal/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aditi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/aditi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/aditi-ThinkPad-T480s:@/tmp/.ICE-unix/1556,unix/aditi-ThinkPad-T480s:/tmp/.ICE-unix/1556'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/753c7599_1734_4a92_8a64_d115f004dc92'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.J39IQ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_rover:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aditi/ERC/build/pcl_ground_removal'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages:/home/aditi/ERC/install/leo_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/aditi/ERC/install/leo_rover:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble')]), 'shell': False}
+[0.080371] (pcl_ground_removal) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o\x1b[0m\n'}
+[0.099391] (-) TimerEvent: {}
+[0.199664] (-) TimerEvent: {}
+[0.299940] (-) TimerEvent: {}
+[0.400241] (-) TimerEvent: {}
+[0.500523] (-) TimerEvent: {}
+[0.600825] (-) TimerEvent: {}
+[0.701116] (-) TimerEvent: {}
+[0.801423] (-) TimerEvent: {}
+[0.901709] (-) TimerEvent: {}
+[1.001999] (-) TimerEvent: {}
+[1.102297] (-) TimerEvent: {}
+[1.202615] (-) TimerEvent: {}
+[1.302946] (-) TimerEvent: {}
+[1.403242] (-) TimerEvent: {}
+[1.503540] (-) TimerEvent: {}
+[1.603873] (-) TimerEvent: {}
+[1.704170] (-) TimerEvent: {}
+[1.804468] (-) TimerEvent: {}
+[1.904785] (-) TimerEvent: {}
+[2.005054] (-) TimerEvent: {}
+[2.105372] (-) TimerEvent: {}
+[2.205658] (-) TimerEvent: {}
+[2.305950] (-) TimerEvent: {}
+[2.406244] (-) TimerEvent: {}
+[2.506537] (-) TimerEvent: {}
+[2.606841] (-) TimerEvent: {}
+[2.707173] (-) TimerEvent: {}
+[2.807475] (-) TimerEvent: {}
+[2.907784] (-) TimerEvent: {}
+[3.008089] (-) TimerEvent: {}
+[3.108384] (-) TimerEvent: {}
+[3.208675] (-) TimerEvent: {}
+[3.308969] (-) TimerEvent: {}
+[3.409272] (-) TimerEvent: {}
+[3.509568] (-) TimerEvent: {}
+[3.609889] (-) TimerEvent: {}
+[3.710197] (-) TimerEvent: {}
+[3.810496] (-) TimerEvent: {}
+[3.910802] (-) TimerEvent: {}
+[4.011100] (-) TimerEvent: {}
+[4.111411] (-) TimerEvent: {}
+[4.211718] (-) TimerEvent: {}
+[4.312041] (-) TimerEvent: {}
+[4.412360] (-) TimerEvent: {}
+[4.512700] (-) TimerEvent: {}
+[4.613046] (-) TimerEvent: {}
+[4.713382] (-) TimerEvent: {}
+[4.813713] (-) TimerEvent: {}
+[4.914030] (-) TimerEvent: {}
+[5.014338] (-) TimerEvent: {}
+[5.114656] (-) TimerEvent: {}
+[5.214948] (-) TimerEvent: {}
+[5.315243] (-) TimerEvent: {}
+[5.415544] (-) TimerEvent: {}
+[5.515854] (-) TimerEvent: {}
+[5.616166] (-) TimerEvent: {}
+[5.716477] (-) TimerEvent: {}
+[5.816806] (-) TimerEvent: {}
+[5.917159] (-) TimerEvent: {}
+[6.017468] (-) TimerEvent: {}
+[6.117767] (-) TimerEvent: {}
+[6.218061] (-) TimerEvent: {}
+[6.318361] (-) TimerEvent: {}
+[6.418652] (-) TimerEvent: {}
+[6.518956] (-) TimerEvent: {}
+[6.619257] (-) TimerEvent: {}
+[6.719576] (-) TimerEvent: {}
+[6.819874] (-) TimerEvent: {}
+[6.920183] (-) TimerEvent: {}
+[7.020480] (-) TimerEvent: {}
+[7.120808] (-) TimerEvent: {}
+[7.221119] (-) TimerEvent: {}
+[7.321430] (-) TimerEvent: {}
+[7.421735] (-) TimerEvent: {}
+[7.522031] (-) TimerEvent: {}
+[7.622332] (-) TimerEvent: {}
+[7.722642] (-) TimerEvent: {}
+[7.822950] (-) TimerEvent: {}
+[7.923263] (-) TimerEvent: {}
+[8.023574] (-) TimerEvent: {}
+[8.123892] (-) TimerEvent: {}
+[8.224197] (-) TimerEvent: {}
+[8.324509] (-) TimerEvent: {}
+[8.424813] (-) TimerEvent: {}
+[8.525131] (-) TimerEvent: {}
+[8.625476] (-) TimerEvent: {}
+[8.725827] (-) TimerEvent: {}
+[8.826133] (-) TimerEvent: {}
+[8.926481] (-) TimerEvent: {}
+[9.026841] (-) TimerEvent: {}
+[9.127220] (-) TimerEvent: {}
+[9.227613] (-) TimerEvent: {}
+[9.327992] (-) TimerEvent: {}
+[9.428329] (-) TimerEvent: {}
+[9.528673] (-) TimerEvent: {}
+[9.629002] (-) TimerEvent: {}
+[9.729338] (-) TimerEvent: {}
+[9.829673] (-) TimerEvent: {}
+[9.930015] (-) TimerEvent: {}
+[10.030348] (-) TimerEvent: {}
+[10.130661] (-) TimerEvent: {}
+[10.231000] (-) TimerEvent: {}
+[10.331419] (-) TimerEvent: {}
+[10.431772] (-) TimerEvent: {}
+[10.532145] (-) TimerEvent: {}
+[10.632511] (-) TimerEvent: {}
+[10.732841] (-) TimerEvent: {}
+[10.833182] (-) TimerEvent: {}
+[10.933525] (-) TimerEvent: {}
+[11.033870] (-) TimerEvent: {}
+[11.134213] (-) TimerEvent: {}
+[11.234525] (-) TimerEvent: {}
+[11.334805] (-) TimerEvent: {}
+[11.435088] (-) TimerEvent: {}
+[11.535370] (-) TimerEvent: {}
+[11.635652] (-) TimerEvent: {}
+[11.735933] (-) TimerEvent: {}
+[11.836219] (-) TimerEvent: {}
+[11.936507] (-) TimerEvent: {}
+[12.036791] (-) TimerEvent: {}
+[12.137078] (-) TimerEvent: {}
+[12.237360] (-) TimerEvent: {}
+[12.337641] (-) TimerEvent: {}
+[12.437925] (-) TimerEvent: {}
+[12.538216] (-) TimerEvent: {}
+[12.638505] (-) TimerEvent: {}
+[12.738790] (-) TimerEvent: {}
+[12.839072] (-) TimerEvent: {}
+[12.939356] (-) TimerEvent: {}
+[13.039641] (-) TimerEvent: {}
+[13.139903] (-) TimerEvent: {}
+[13.240187] (-) TimerEvent: {}
+[13.340470] (-) TimerEvent: {}
+[13.440752] (-) TimerEvent: {}
+[13.541043] (-) TimerEvent: {}
+[13.641322] (-) TimerEvent: {}
+[13.741602] (-) TimerEvent: {}
+[13.841886] (-) TimerEvent: {}
+[13.942490] (-) TimerEvent: {}
+[14.042812] (-) TimerEvent: {}
+[14.143131] (-) TimerEvent: {}
+[14.243425] (-) TimerEvent: {}
+[14.343736] (-) TimerEvent: {}
+[14.444058] (-) TimerEvent: {}
+[14.544384] (-) TimerEvent: {}
+[14.644734] (-) TimerEvent: {}
+[14.667312] (pcl_ground_removal) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ground_removal_node\x1b[0m\n'}
+[14.744866] (-) TimerEvent: {}
+[14.845164] (-) TimerEvent: {}
+[14.945453] (-) TimerEvent: {}
+[15.045756] (-) TimerEvent: {}
+[15.146088] (-) TimerEvent: {}
+[15.246420] (-) TimerEvent: {}
+[15.346791] (-) TimerEvent: {}
+[15.447199] (-) TimerEvent: {}
+[15.547608] (-) TimerEvent: {}
+[15.647995] (-) TimerEvent: {}
+[15.748375] (-) TimerEvent: {}
+[15.848752] (-) TimerEvent: {}
+[15.949133] (-) TimerEvent: {}
+[16.049530] (-) TimerEvent: {}
+[16.149925] (-) TimerEvent: {}
+[16.250331] (-) TimerEvent: {}
+[16.350731] (-) TimerEvent: {}
+[16.451137] (-) TimerEvent: {}
+[16.551513] (-) TimerEvent: {}
+[16.651857] (-) TimerEvent: {}
+[16.752203] (-) TimerEvent: {}
+[16.852525] (-) TimerEvent: {}
+[16.952822] (-) TimerEvent: {}
+[17.053181] (-) TimerEvent: {}
+[17.153564] (-) TimerEvent: {}
+[17.249845] (pcl_ground_removal) StdoutLine: {'line': b'[100%] Built target ground_removal_node\n'}
+[17.253680] (-) TimerEvent: {}
+[17.263818] (pcl_ground_removal) CommandEnded: {'returncode': 0}
+[17.296843] (pcl_ground_removal) JobProgress: {'identifier': 'pcl_ground_removal', 'progress': 'install'}
+[17.307924] (pcl_ground_removal) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/aditi/ERC/build/pcl_ground_removal'], 'cwd': '/home/aditi/ERC/build/pcl_ground_removal', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'aditi'), ('ROS_PACKAGE_PATH', '/home/aditi/ERC/install/pcl_ground_removal/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aditi'), ('OLDPWD', '/home/aditi/ERC'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3875'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aditi/ERC/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aditi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/aditi/ERC/install/pcl_ground_removal/lib/x86_64-linux-gnu/pkgconfig:/home/aditi/ERC/install/pcl_ground_removal/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aditi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/aditi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/aditi-ThinkPad-T480s:@/tmp/.ICE-unix/1556,unix/aditi-ThinkPad-T480s:/tmp/.ICE-unix/1556'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/753c7599_1734_4a92_8a64_d115f004dc92'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.J39IQ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_rover:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aditi/ERC/build/pcl_ground_removal'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages:/home/aditi/ERC/install/leo_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/aditi/ERC/install/leo_rover:/home/aditi/ERC/install/leo_worlds:/home/aditi/ERC/install/leo_nodes:/opt/ros/humble')]), 'shell': False}
+[17.318511] (pcl_ground_removal) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.318868] (pcl_ground_removal) StdoutLine: {'line': b'-- Installing: /home/aditi/ERC/install/pcl_ground_removal/lib/pcl_ground_removal/ground_removal_node\n'}
+[17.324443] (pcl_ground_removal) StdoutLine: {'line': b'-- Set runtime path of "/home/aditi/ERC/install/pcl_ground_removal/lib/pcl_ground_removal/ground_removal_node" to ""\n'}
+[17.324580] (pcl_ground_removal) StdoutLine: {'line': b'-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/ament_index/resource_index/package_run_dependencies/pcl_ground_removal\n'}
+[17.324886] (pcl_ground_removal) StdoutLine: {'line': b'-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/ament_index/resource_index/parent_prefix_path/pcl_ground_removal\n'}
+[17.324983] (pcl_ground_removal) StdoutLine: {'line': b'-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/ament_prefix_path.sh\n'}
+[17.325064] (pcl_ground_removal) StdoutLine: {'line': b'-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/ament_prefix_path.dsv\n'}
+[17.325142] (pcl_ground_removal) StdoutLine: {'line': b'-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/path.sh\n'}
+[17.325218] (pcl_ground_removal) StdoutLine: {'line': b'-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/path.dsv\n'}
+[17.325292] (pcl_ground_removal) StdoutLine: {'line': b'-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.bash\n'}
+[17.325477] (pcl_ground_removal) StdoutLine: {'line': b'-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.sh\n'}
+[17.325594] (pcl_ground_removal) StdoutLine: {'line': b'-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.zsh\n'}
+[17.325679] (pcl_ground_removal) StdoutLine: {'line': b'-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.dsv\n'}
+[17.325758] (pcl_ground_removal) StdoutLine: {'line': b'-- Installing: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.dsv\n'}
+[17.325834] (pcl_ground_removal) StdoutLine: {'line': b'-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/ament_index/resource_index/packages/pcl_ground_removal\n'}
+[17.326004] (pcl_ground_removal) StdoutLine: {'line': b'-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/cmake/pcl_ground_removalConfig.cmake\n'}
+[17.326116] (pcl_ground_removal) StdoutLine: {'line': b'-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/cmake/pcl_ground_removalConfig-version.cmake\n'}
+[17.326195] (pcl_ground_removal) StdoutLine: {'line': b'-- Up-to-date: /home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.xml\n'}
+[17.327541] (pcl_ground_removal) CommandEnded: {'returncode': 0}
+[17.353764] (-) TimerEvent: {}
+[17.373477] (pcl_ground_removal) JobEnded: {'identifier': 'pcl_ground_removal', 'rc': 0}
+[17.374243] (-) EventReactorShutdown: {}

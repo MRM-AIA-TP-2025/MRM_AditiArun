@@ -1,0 +1,4 @@
+Invoking command in '/home/aditi/ERC/pcl_ground_removal/build/pcl_ground_removal': /usr/bin/cmake /home/aditi/ERC/pcl_ground_removal -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/aditi/ERC/pcl_ground_removal/install/pcl_ground_removal
+Invoked command in '/home/aditi/ERC/pcl_ground_removal/build/pcl_ground_removal' returned '0': /usr/bin/cmake /home/aditi/ERC/pcl_ground_removal -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/aditi/ERC/pcl_ground_removal/install/pcl_ground_removal
+Invoking command in '/home/aditi/ERC/pcl_ground_removal/build/pcl_ground_removal': /usr/bin/cmake --build /home/aditi/ERC/pcl_ground_removal/build/pcl_ground_removal -- -j8 -l8
+Invoked command in '/home/aditi/ERC/pcl_ground_removal/build/pcl_ground_removal' returned '2': /usr/bin/cmake --build /home/aditi/ERC/pcl_ground_removal/build/pcl_ground_removal -- -j8 -l8

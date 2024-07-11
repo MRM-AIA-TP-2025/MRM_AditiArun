@@ -1,0 +1,2 @@
+Invoking command in '/home/aditi/ERC/build/pcl_ground_removal': /usr/bin/cmake --build /home/aditi/ERC/build/pcl_ground_removal -- -j8 -l8
+Invoked command in '/home/aditi/ERC/build/pcl_ground_removal' returned '2': /usr/bin/cmake --build /home/aditi/ERC/build/pcl_ground_removal -- -j8 -l8

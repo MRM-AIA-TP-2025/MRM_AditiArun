@@ -1,0 +1,249 @@
+[0.009s] Invoking command in '/home/aditi/ERC/build/pcl_ground_removal': /usr/bin/cmake /home/aditi/ERC/pcl_ground_removal -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/aditi/ERC/install/pcl_ground_removal
+[0.063s] -- The C compiler identification is GNU 11.4.0
+[0.119s] -- The CXX compiler identification is GNU 11.4.0
+[0.126s] -- Detecting C compiler ABI info
+[0.199s] -- Detecting C compiler ABI info - done
+[0.207s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.207s] -- Detecting C compile features
+[0.207s] -- Detecting C compile features - done
+[0.211s] -- Detecting CXX compiler ABI info
+[0.294s] -- Detecting CXX compiler ABI info - done
+[0.302s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.302s] -- Detecting CXX compile features
+[0.303s] -- Detecting CXX compile features - done
+[0.305s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.459s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.549s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.593s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.598s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.607s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.621s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.641s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.714s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.716s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.811s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.841s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.892s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.902s] -- Looking for pthread.h
+[0.975s] -- Looking for pthread.h - found
+[0.976s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.056s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.057s] -- Found Threads: TRUE  
+[1.228s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.370s] -- Checking for module 'eigen3'
+[1.381s] --   Found eigen3, version 3.4.0
+[1.410s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.410s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.445s] -- Found Boost: /usr/include (found suitable version "1.74.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex 
+[1.450s] -- Checking for module 'libusb-1.0'
+[1.453s] --   No package 'libusb-1.0' found
+[1.455s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.455s]   The package name passed to `find_package_handle_standard_args` (USB_10)
+[1.456s]   does not match the name of the calling package (OpenNI).  This can lead to
+[1.456s]   problems in calling code that expects `find_package` result variables
+[1.456s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.456s] Call Stack (most recent call first):
+[1.456s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI.cmake:28 (find_package_handle_standard_args)
+[1.456s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:179 (find_package)
+[1.456s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:322 (find_openni)
+[1.456s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)
+[1.456s]   CMakeLists.txt:12 (find_package)
+[1.456s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.456s] [0m
+[1.456s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[1.456s] -- OpenNI disabled because libusb-1.0 not found.
+[1.456s] [0m** WARNING ** io features related to openni will be disabled[0m
+[1.460s] -- Checking for module 'libusb-1.0'
+[1.463s] --   No package 'libusb-1.0' found
+[1.466s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.466s]   The package name passed to `find_package_handle_standard_args` (USB_10)
+[1.466s]   does not match the name of the calling package (OpenNI2).  This can lead to
+[1.466s]   problems in calling code that expects `find_package` result variables
+[1.466s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.466s] Call Stack (most recent call first):
+[1.466s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI2.cmake:28 (find_package_handle_standard_args)
+[1.467s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:193 (find_package)
+[1.467s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_openni2)
+[1.467s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)
+[1.467s]   CMakeLists.txt:12 (find_package)
+[1.467s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.467s] [0m
+[1.467s] [0m** WARNING ** io features related to openni2 will be disabled[0m
+[1.467s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[1.467s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[1.467s] -- OpenNI 2 disabled because libusb-1.0 not found.
+[1.468s] [0m** WARNING ** io features related to png will be disabled[0m
+[1.491s] -- The imported target "vtkParseOGLExt" references the file
+[1.491s]    "/usr/bin/vtkParseOGLExt-7.1"
+[1.491s] but this file does not exist.  Possible reasons include:
+[1.491s] * The file was deleted, renamed, or moved to another location.
+[1.491s] * An install or uninstall procedure did not complete successfully.
+[1.491s] * The installation package was faulty and contained
+[1.491s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.491s] but not all the files it references.
+[1.491s] 
+[1.491s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[1.491s]    "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[1.491s] but this file does not exist.  Possible reasons include:
+[1.492s] * The file was deleted, renamed, or moved to another location.
+[1.492s] * An install or uninstall procedure did not complete successfully.
+[1.492s] * The installation package was faulty and contained
+[1.492s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.492s] but not all the files it references.
+[1.492s] 
+[1.492s] -- The imported target "vtk" references the file
+[1.492s]    "/usr/bin/vtk"
+[1.492s] but this file does not exist.  Possible reasons include:
+[1.492s] * The file was deleted, renamed, or moved to another location.
+[1.492s] * An install or uninstall procedure did not complete successfully.
+[1.492s] * The installation package was faulty and contained
+[1.492s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.492s] but not all the files it references.
+[1.492s] 
+[1.492s] -- The imported target "pvtk" references the file
+[1.492s]    "/usr/bin/pvtk"
+[1.492s] but this file does not exist.  Possible reasons include:
+[1.493s] * The file was deleted, renamed, or moved to another location.
+[1.493s] * An install or uninstall procedure did not complete successfully.
+[1.493s] * The installation package was faulty and contained
+[1.493s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.493s] but not all the files it references.
+[1.493s] 
+[1.502s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.502s]   The package name passed to `find_package_handle_standard_args` (libusb-1.0)
+[1.502s]   does not match the name of the calling package (PCL).  This can lead to
+[1.502s]   problems in calling code that expects `find_package` result variables
+[1.502s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.502s] Call Stack (most recent call first):
+[1.502s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:291 (find_package_handle_standard_args)
+[1.503s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:338 (find_libusb)
+[1.503s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:548 (find_external_library)
+[1.503s]   CMakeLists.txt:12 (find_package)
+[1.503s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.503s] [0m
+[1.503s] -- LIBUSB_1_LIBRARY (missing: LIBUSB_1_INCLUDE_DIR) 
+[1.503s] [0m** WARNING ** io features related to libusb-1.0 will be disabled[0m
+[1.519s] -- Checking for module 'flann'
+[1.531s] --   Found flann, version 1.9.1
+[1.566s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.567s] -- looking for PCL_COMMON
+[1.568s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.569s]   The package name passed to `find_package_handle_standard_args` (PCL_COMMON)
+[1.569s]   does not match the name of the calling package (PCL).  This can lead to
+[1.569s]   problems in calling code that expects `find_package` result variables
+[1.569s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.569s] Call Stack (most recent call first):
+[1.569s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.569s]   CMakeLists.txt:12 (find_package)
+[1.569s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.569s] [0m
+[1.569s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[1.570s] -- looking for PCL_OCTREE
+[1.570s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.570s]   The package name passed to `find_package_handle_standard_args` (PCL_OCTREE)
+[1.570s]   does not match the name of the calling package (PCL).  This can lead to
+[1.571s]   problems in calling code that expects `find_package` result variables
+[1.571s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.571s] Call Stack (most recent call first):
+[1.571s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.571s]   CMakeLists.txt:12 (find_package)
+[1.571s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.571s] [0m
+[1.571s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[1.571s] -- looking for PCL_IO
+[1.572s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.572s]   The package name passed to `find_package_handle_standard_args` (PCL_IO)
+[1.572s]   does not match the name of the calling package (PCL).  This can lead to
+[1.572s]   problems in calling code that expects `find_package` result variables
+[1.573s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.573s] Call Stack (most recent call first):
+[1.573s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.573s]   CMakeLists.txt:12 (find_package)
+[1.573s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.573s] [0m
+[1.573s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[1.573s] -- looking for PCL_KDTREE
+[1.574s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.574s]   The package name passed to `find_package_handle_standard_args` (PCL_KDTREE)
+[1.574s]   does not match the name of the calling package (PCL).  This can lead to
+[1.574s]   problems in calling code that expects `find_package` result variables
+[1.575s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.575s] Call Stack (most recent call first):
+[1.575s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.575s]   CMakeLists.txt:12 (find_package)
+[1.575s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.575s] [0m
+[1.575s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[1.575s] -- looking for PCL_SEARCH
+[1.576s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.576s]   The package name passed to `find_package_handle_standard_args` (PCL_SEARCH)
+[1.576s]   does not match the name of the calling package (PCL).  This can lead to
+[1.576s]   problems in calling code that expects `find_package` result variables
+[1.577s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.577s] Call Stack (most recent call first):
+[1.577s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.577s]   CMakeLists.txt:12 (find_package)
+[1.577s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.577s] [0m
+[1.577s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[1.577s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.578s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.578s]   The package name passed to `find_package_handle_standard_args`
+[1.578s]   (PCL_SAMPLE_CONSENSUS) does not match the name of the calling package
+[1.578s]   (PCL).  This can lead to problems in calling code that expects
+[1.579s]   `find_package` result variables (e.g., `_FOUND`) to follow a certain
+[1.579s]   pattern.
+[1.579s] Call Stack (most recent call first):
+[1.579s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.579s]   CMakeLists.txt:12 (find_package)
+[1.579s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.579s] [0m
+[1.579s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[1.579s] -- looking for PCL_FILTERS
+[1.580s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.580s]   The package name passed to `find_package_handle_standard_args`
+[1.580s]   (PCL_FILTERS) does not match the name of the calling package (PCL).  This
+[1.580s]   can lead to problems in calling code that expects `find_package` result
+[1.581s]   variables (e.g., `_FOUND`) to follow a certain pattern.
+[1.581s] Call Stack (most recent call first):
+[1.581s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+[1.581s]   CMakeLists.txt:12 (find_package)
+[1.581s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.581s] [0m
+[1.581s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[1.581s] -- Found PCL: pcl_common;pcl_octree;pcl_io;pcl_kdtree;pcl_search;pcl_sample_consensus;pcl_filters;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;FLANN::FLANN  
+[1.583s] -- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.806s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.890s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.900s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.900s] -- Configured cppcheck include dirs: 
+[1.901s] -- Configured cppcheck exclude dirs and/or files: 
+[1.902s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.905s] -- Added test 'lint_cmake' to check CMake code style
+[1.906s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.916s] -- Added test 'uncrustify' to check C / C++ code style
+[1.916s] -- Configured uncrustify additional arguments: 
+[1.918s] -- Added test 'xmllint' to check XML markup files
+[1.919s] -- Configuring done
+[1.952s] -- Generating done
+[1.953s] [33mCMake Warning:
+[1.953s]   Manually-specified variables were not used by the project:
+[1.953s] 
+[1.954s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[1.954s] 
+[1.954s] [0m
+[1.954s] -- Build files have been written to: /home/aditi/ERC/build/pcl_ground_removal
+[1.967s] Invoked command in '/home/aditi/ERC/build/pcl_ground_removal' returned '0': /usr/bin/cmake /home/aditi/ERC/pcl_ground_removal -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/aditi/ERC/install/pcl_ground_removal
+[1.969s] Invoking command in '/home/aditi/ERC/build/pcl_ground_removal': /usr/bin/cmake --build /home/aditi/ERC/build/pcl_ground_removal -- -j8 -l8
+[2.027s] [ 50%] [32mBuilding CXX object CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o[0m
+[16.670s] [100%] [32m[1mLinking CXX executable ground_removal_node[0m
+[17.882s] /usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o: in function `GroundRemovalNode::pointCloudCallback(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >)':
+[17.882s] ground_removal_node.cpp:(.text._ZN17GroundRemovalNode18pointCloudCallbackESt10shared_ptrIN11sensor_msgs3msg12PointCloud2_ISaIvEEEE[_ZN17GroundRemovalNode18pointCloudCallbackESt10shared_ptrIN11sensor_msgs3msg12PointCloud2_ISaIvEEEE]+0x226): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::segment(pcl::PointIndices&, pcl::ModelCoefficients&)'
+[17.899s] /usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o:(.data.rel.ro._ZTVN3pcl15SACSegmentationINS_8PointXYZEEE[_ZTVN3pcl15SACSegmentationINS_8PointXYZEEE]+0x48): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::segment(pcl::PointIndices&, pcl::ModelCoefficients&)'
+[17.900s] /usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o:(.data.rel.ro._ZTVN3pcl15SACSegmentationINS_8PointXYZEEE[_ZTVN3pcl15SACSegmentationINS_8PointXYZEEE]+0x50): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::initSACModel(int)'
+[17.900s] /usr/bin/ld: CMakeFiles/ground_removal_node.dir/src/ground_removal_node.cpp.o:(.data.rel.ro._ZTVN3pcl15SACSegmentationINS_8PointXYZEEE[_ZTVN3pcl15SACSegmentationINS_8PointXYZEEE]+0x58): undefined reference to `pcl::SACSegmentation<pcl::PointXYZ>::initSAC(int)'
+[17.966s] collect2: error: ld returned 1 exit status
+[17.968s] gmake[2]: *** [CMakeFiles/ground_removal_node.dir/build.make:338: ground_removal_node] Error 1
+[17.968s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ground_removal_node.dir/all] Error 2
+[17.969s] gmake: *** [Makefile:146: all] Error 2
+[17.971s] Invoked command in '/home/aditi/ERC/build/pcl_ground_removal' returned '2': /usr/bin/cmake --build /home/aditi/ERC/build/pcl_ground_removal -- -j8 -l8

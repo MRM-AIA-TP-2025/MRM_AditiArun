@@ -1,0 +1,20 @@
+[1.744s] Invoking command in '/home/aditi/ERC/leo_worlds': PYTHONPATH=/home/aditi/ERC/build/leo_worlds/prefix_override:/home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/leo_worlds build --build-base /home/aditi/ERC/build/leo_worlds/build install --record /home/aditi/ERC/build/leo_worlds/install.log --single-version-externally-managed install_data
+[2.230s] running egg_info
+[2.231s] writing ../build/leo_worlds/leo_worlds.egg-info/PKG-INFO
+[2.231s] writing dependency_links to ../build/leo_worlds/leo_worlds.egg-info/dependency_links.txt
+[2.231s] writing entry points to ../build/leo_worlds/leo_worlds.egg-info/entry_points.txt
+[2.232s] writing requirements to ../build/leo_worlds/leo_worlds.egg-info/requires.txt
+[2.232s] writing top-level names to ../build/leo_worlds/leo_worlds.egg-info/top_level.txt
+[2.235s] reading manifest file '../build/leo_worlds/leo_worlds.egg-info/SOURCES.txt'
+[2.237s] writing manifest file '../build/leo_worlds/leo_worlds.egg-info/SOURCES.txt'
+[2.238s] running build
+[2.238s] running build_py
+[2.238s] running install
+[2.238s] running install_lib
+[2.241s] running install_data
+[2.241s] running install_egg_info
+[2.244s] removing '/home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages/leo_worlds-0.0.0-py3.10.egg-info' (and everything under it)
+[2.244s] Copying ../build/leo_worlds/leo_worlds.egg-info to /home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages/leo_worlds-0.0.0-py3.10.egg-info
+[2.246s] running install_scripts
+[2.292s] writing list of installed files to '/home/aditi/ERC/build/leo_worlds/install.log'
+[2.339s] Invoked command in '/home/aditi/ERC/leo_worlds' returned '0': PYTHONPATH=/home/aditi/ERC/build/leo_worlds/prefix_override:/home/aditi/ERC/install/leo_worlds/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/leo_worlds build --build-base /home/aditi/ERC/build/leo_worlds/build install --record /home/aditi/ERC/build/leo_worlds/install.log --single-version-externally-managed install_data

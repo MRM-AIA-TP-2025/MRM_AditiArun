@@ -1,0 +1,16 @@
+/home/aditi/ERC/install/pcl_ground_removal/lib/pcl_ground_removal/ground_removal_node
+/home/aditi/ERC/install/pcl_ground_removal/share/ament_index/resource_index/package_run_dependencies/pcl_ground_removal
+/home/aditi/ERC/install/pcl_ground_removal/share/ament_index/resource_index/parent_prefix_path/pcl_ground_removal
+/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/ament_prefix_path.sh
+/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/ament_prefix_path.dsv
+/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/path.sh
+/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/environment/path.dsv
+/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.bash
+/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.sh
+/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.zsh
+/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/local_setup.dsv
+/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.dsv
+/home/aditi/ERC/install/pcl_ground_removal/share/ament_index/resource_index/packages/pcl_ground_removal
+/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/cmake/pcl_ground_removalConfig.cmake
+/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/cmake/pcl_ground_removalConfig-version.cmake
+/home/aditi/ERC/install/pcl_ground_removal/share/pcl_ground_removal/package.xml
