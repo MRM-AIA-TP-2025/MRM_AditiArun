@@ -1,41 +1,46 @@
-#!/usr/bin/env python3
-
+import sys
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import TransformStamped
-from std_msgs.msg import Float32MultiArray
+from geometry_msgs.msg import PoseStamped
 
-class SimpleTransformNode(Node):
-    def __init__(self):
+class GroundTruthFilter(Node):
+
+    def __init__(self, x, y):
         super().__init__('ground_truth_filter')
+        self.publisher_ = self.create_publisher(PoseStamped, 'goal_pose', 10)
+        self.timer = self.create_timer(1.0, self.publish_goal_pose)
+        self.x = x
+        self.y = y
 
-        self.xy_pub = self.create_publisher(Float32MultiArray, 'xy_values', 10)
-        self.create_subscription(TransformStamped, '/tf', self.tf_callback, 10)
-        self.get_logger().info("Node initialized and subscription created.")
-
-    def tf_callback(self, msg):
-        try:
-            pose = msg.transform.translation
-            x = pose.x + 17.0038069
-            y = 7.617856 - pose.y
-            self.publish_xy(x, y)
-            self.get_logger().info(f'Published X: {x}, Y: {y}')
-        except Exception as e:
-            self.get_logger().error(f"Error in TF callback: {str(e)}")
-
-    def publish_xy(self, x, y):
-        msg = Float32MultiArray()
-        msg.data = [x, y]
-        self.xy_pub.publish(msg)
+    def publish_goal_pose(self):
+        pose = PoseStamped()
+        pose.header.frame_id = 'map'
+        pose.header.stamp = self.get_clock().now().to_msg()
+        pose.pose.position.x = self.x - 17.0038069
+        pose.pose.position.y = 7.617856 - self.y
+        pose.pose.position.z = 0.0
+        pose.pose.orientation.w = 1.0
+        self.publisher_.publish(pose)
 
 def main(args=None):
     rclpy.init(args=args)
-    node = SimpleTransformNode()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    
+    if len(sys.argv) != 3:
+        print("Usage: ros2 run leo_nodes ground_truth_filter <x_value> <y_value>")
+        return
+
+    x = float(sys.argv[1])
+    y = float(sys.argv[2])
+
+    ground_truth_filter = GroundTruthFilter(x, y)
+
+    try:
+        rclpy.spin(ground_truth_filter)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        ground_truth_filter.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
-
-

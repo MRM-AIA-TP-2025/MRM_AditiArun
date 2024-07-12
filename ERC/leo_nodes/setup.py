@@ -21,13 +21,12 @@ setup(
     entry_points={
         'console_scripts': [
             'pdu_node = leo_nodes.pdu_node:main',
-            'ground_truth_filter = leo_nodes.simple_transform_node:main',
+            'ground_truth_filter = leo_nodes.ground_truth_filter:main',
             'odom_compat_node = leo_nodes.odom_compat_node:main',
             'zed2_imu_transform_broadcaster = leo_nodes.zed2_imu_transform_broadcaster:main',
             'cmd_vel_relay = leo_nodes.cmd_vel_relay:main',
             'zed2_imu_transform_publisher = leo_nodes.zed2_imu_transform_publisher:main',
         ],
-
     },
 )
 
