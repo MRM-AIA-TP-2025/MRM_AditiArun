@@ -1,0 +1,8 @@
+
+<launch>
+   
+    <include file="$(find rover)/launch/gazebo.launch" />
+   
+    <node name="gps" pkg="rover" type="gps" output="screen"/>
+</launch>
+

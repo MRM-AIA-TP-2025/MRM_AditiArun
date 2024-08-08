@@ -37,6 +37,13 @@
         <arg name="use_sim_time" value="true"/>
     </include>
 
+  <node name="ekf_localization_node"
+        pkg="robot_localization"
+        exec="ekf_node" output="screen" launch-prefix="gnome-terminal --">
+        <param name="use_sim_time" value="true"/>
+        <param name="params_file" value="/home/aditi/ERC/leo_rover/config/ekf_localization.yaml"/>
+    </node>
+    
     <!-- Navigation stack -->
     <include file="$(find-pkg-share nav2_bringup)/launch/navigation_launch.py">
         <arg name="params_file" value="$(var leo_rover_package)/params/nav2_params.yaml"/>
